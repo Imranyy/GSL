@@ -26,7 +26,7 @@ nav ul li{
 .hero-image{
   padding-top: 10px;
   padding-left: 4%;
-  height: 500px;
+  height: 450px;
   color: white;
   text-align: center;
   background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79)), url('./media/Rectangle\ 17.png');
@@ -60,4 +60,70 @@ nav ul li{
   margin-top: 85px;
   cursor: pointer;
   width: 30px;
+}
+.plans{
+  padding-top:30px;
+  height: 742px;
+  background: rgba(255, 255, 255, 0.91);
+}
+.plans h1{
+  margin: 0 auto;
+  width: 319px;
+  height: 55px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+}
+.plans .grid-plans{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(3,1fr);
+  padding: 30px 100px 58px 80px;
+}
+.grid-plans .grid-item-plan1,.grid-item-plan2,.grid-item-plan3{
+  width: 300px;
+  margin-left: 20px;
+  height: 483.81px;
+  border-radius: 11.3836px;
+}
+.grid-item-plan1, .grid-item-plan3{
+  text-align: center;
+  padding: 25px 40px 23px 40px;
+  background: #FCFCFC;
+  border: 1.13836px solid #2A95D0;
+  box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
+}
+.grid-item-plan2{
+  text-align: center;
+  padding: 25px 40px 23px 40px;
+  background: #2A95D0;
+  border: 1.13836px solid #FFFFFF;
+  color: white;
+  box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
+}
+.grid-plans h2{
+  font-weight: 400;
+  font-size: 22.7673px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.grid-plans .content{
+  box-sizing: border-box;
+  width: 280px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.divider{
+  height: 156px;
+  text-align: center;
+  background: #FFFFFF;
+}
+.divider h1{
+  height: 55px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
 }
