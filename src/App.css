@@ -169,6 +169,107 @@ nav ul li{
   border: 1px solid #2A95D0;
   height: 50px;
 }
+.plans1{
+  padding-top:30px;
+  height: 742px;
+  background: #0D212D;
+}
+.plans1 h1{
+  margin: 0 auto;
+  width: 350px;
+  height: 55px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: #FCFCFC;
+}
+.plans1-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.plans1-button .btn2{
+  background: #FCFCFC;
+  border-radius: 10px;
+  color: #2A95D0;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #2A95D0;
+  height: 50px;
+}
+.plans1-button .btn1{
+  background: #2A95D0;
+  border-radius: 10px;
+  line-height: 28px;
+  color: #FCFCFC;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin-left: 41px;
+}
+.plans1 .grid-plans1{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(3,1fr);
+  padding: 30px 100px 58px 80px;
+}
+.grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan2,.grid-plans1 .grid-item-plan3{
+  width: 300px;
+  margin-left: 20px;
+  height: 483.81px;
+  border-radius: 11.3836px;
+}
+.grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan3{
+  text-align: center;
+  padding: 25px 40px 23px 40px;
+  background: #FCFCFC;
+  border: 1.13836px solid #2A95D0;
+  box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
+}
+.grid-plans1 .grid-item-plan2{
+  text-align: center;
+  padding: 25px 40px 23px 40px;
+  background: #2A95D0;
+  border: 1.13836px solid #FFFFFF;
+  color: white;
+  box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
+}
+.grid-plans1 h2{
+  font-weight: 400;
+  font-size: 22.7673px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.grid-plans1 .content{
+  box-sizing: border-box;
+  width: 280px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.grid-plans1 .btn1{
+  margin-top: 35px;
+  background: #2A95D0;
+  border-radius: 10px;
+  line-height: 28px;
+  color: #FCFCFC;
+  cursor: pointer;
+  width: 280px;
+  height: 50px;
+  border: none;
+}
+.grid-plans1 .btn2{
+  margin-top: 35px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  color: #2A95D0;
+  cursor: pointer;
+  width: 280px;
+  border: 1px solid #2A95D0;
+  height: 50px;
+}
 .divider{
   height: 156px;
   text-align: center;
@@ -240,7 +341,7 @@ nav ul li{
   height: 500px;
 }
 .grid-service .content{
-  padding: 240px 20px 20px 30px;
+  padding: 190px 20px 20px 30px;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 20px;
@@ -251,6 +352,63 @@ nav ul li{
 .contact-us{
   height: 450px;
   background: url('./media/Rectangle\ 20.png');
+  color:#ffff;
+  padding: 50px 100px 80px 50px;
+}
+.contact-us .heading{
+  text-align:center;
+}
+.contact-us .grid-contact{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+form .input{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.opt{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+input{
+  width: 345px;
+  padding-left: 10px;
+  color:white;
+  height: 40px;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+}
+textarea{
+  padding-left: 10px;
+  color:white;
+  width: 720px;
+  height: 150px;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+}
+form button{
+  width: 249.31px;
+  height: 62px;
+  background: #2A95D0;
+  border-radius: 10px;
+  margin-left: 520px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FCFCFC;
 }
 footer{
   background: #000;
