@@ -12,7 +12,7 @@ function Plans(props) {
     return (
         <>
         {/* Home */}
-            <div className='plans'>
+            <div className='plans' style={{display:'none'}}>
                 <h1>Internet Plans</h1>
                 <div className='plans-button'>
                     <button className='btn1' >Home</button>
