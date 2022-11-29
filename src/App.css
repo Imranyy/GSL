@@ -183,11 +183,32 @@ nav ul li{
 }
 .whats-in{
   padding: 0px 200px 50px 200px;
+  height: 672px;
 }
 .whats-in .grid-whats{
   display: grid;
   max-width: 100%;
   grid-template-columns: repeat(2,1fr);
+}
+ .grid-whats .grid-item-whats1{
+  height: 300px;
+  background: url('./media/Rectangle\ 4.png');
+  cursor: pointer;
+}
+.grid-whats .grid-item-whats2{
+  height: 300px;
+  background: url('./media/Rectangle\ 8.png');
+  cursor: pointer;
+}
+.grid-whats .grid-item-whats3{
+  height: 300px;
+  background: url('./media/Rectangle\ 9.png');
+  cursor: pointer;
+}
+.grid-whats .grid-item-whats4{
+  height: 300px;
+  background: url('./media/Rectangle\ 13.png');
+  cursor: pointer;
 }
 .contact-us{
   height: 450px;
