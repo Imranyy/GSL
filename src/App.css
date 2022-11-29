@@ -191,25 +191,63 @@ nav ul li{
   grid-template-columns: repeat(2,1fr);
 }
  .grid-whats .grid-item-whats1{
-  height: 300px;
-  background: url('./media/Rectangle\ 4.png');
+  height: 336px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('./media/Rectangle\ 4.png');
   cursor: pointer;
 }
 .grid-whats .grid-item-whats2{
-  height: 300px;
-  background: url('./media/Rectangle\ 8.png');
+  height: 336px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('./media/Rectangle\ 8.png');
   cursor: pointer;
 }
 .grid-whats .grid-item-whats3{
-  height: 300px;
-  background: url('./media/Rectangle\ 9.png');
+  height: 336px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('./media/Rectangle\ 9.png');
   cursor: pointer;
 }
 .grid-whats .grid-item-whats4{
-  height: 300px;
-  background: url('./media/Rectangle\ 13.png');
+  height: 336px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('./media/Rectangle\ 13.png');
   cursor: pointer;
 }
+.grid-whats p{
+  padding-top: 250px;
+  text-align: center;
+  height: 28px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.grid-service{
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 100%;
+}
+.grid-item-service1{
+  background: url('./media/Rectangle\ 29.png');
+  height: 500px;
+}
+.grid-item-service2{
+  background: url('./media/Rectangle\ 30.png');
+  height: 500px;
+}
+.grid-item-service3{
+  background: url('./media/Rectangle\ 31.png');
+  height: 500px;
+}
+.grid-service .content{
+  padding: 240px 20px 20px 30px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 41px;
+  letter-spacing: 0.02em;
+}
+
 .contact-us{
   height: 450px;
   background: url('./media/Rectangle\ 20.png');
