@@ -7,7 +7,7 @@ function HeroImage(props) {
         <>
             <div className='hero-image'>
                 <Navbar/>
-                <h1>SUPER FAST SPEEDS at AFFORDABLE RATES </h1>
+                <h1>SUPER <div className='blue'>FAST</div> SPEEDS at <div className='blue'>AFFORDABLE</div> RATES </h1>
                 <p>GSL brings to Kisumu internet with INCREDIBLE SPEEDS at AFFORDABLE RATES </p>
                 <button>ORDER NOW</button><br/>
                 <img src={vector} alt="..." />

@@ -5,6 +5,10 @@ function Plans(props) {
         <>
             <div className='plans'>
                 <h1>Internet Plans</h1>
+                <div className='plans-button'>
+                    <button className='btn1'>Home</button>
+                    <button className='btn2'>Business</button>
+                </div>
                 <div className='grid-plans'>
                     <div className='grid-item-plan1'>
                         <h2>BRONZE</h2>
@@ -18,7 +22,7 @@ function Plans(props) {
                                 <li>HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button>KSH 2500/mo</button>
+                        <button className='btn1'>KSH 2500/mo</button>
                     </div>
 
                     <div className='grid-item-plan2'>
@@ -33,7 +37,7 @@ function Plans(props) {
                                 <li>HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button>KSH 3000/mo</button>
+                        <button className='btn2'>KSH 3000/mo</button>
                     </div>
 
                     <div className='grid-item-plan3'>
@@ -48,7 +52,7 @@ function Plans(props) {
                                 <li>HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button>KSH 10999/mo</button>
+                        <button className='btn1'>KSH 10999/mo</button>
                     </div>
                 </div>
             </div>

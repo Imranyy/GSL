@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
 }
 nav{
   color: white;
@@ -29,14 +30,21 @@ nav ul li{
   height: 450px;
   color: white;
   text-align: center;
-  background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79)), url('./media/Rectangle\ 17.png');
+  background: url('./media/Rectangle\ 17.png');
 }
 .hero-image h1{
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   height: 55px;
   font-weight: 400;
   font-size: 48px;
   line-height: 55px;
+}
+.hero-image h1 .blue{
+  color: #2A95D0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .hero-image p{
   height: 59px;
@@ -68,12 +76,37 @@ nav ul li{
 }
 .plans h1{
   margin: 0 auto;
-  width: 319px;
+  width: 350px;
   height: 55px;
   font-weight: 400;
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.02em;
+}
+.plans-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.plans-button .btn1{
+  background: #2A95D0;
+  border-radius: 10px;
+  line-height: 28px;
+  color: #FCFCFC;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: none;
+}
+.plans-button .btn2{
+  background: #FCFCFC;
+  border-radius: 10px;
+  color: #2A95D0;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #2A95D0;
+  height: 50px;
+  margin-left: 41px;
 }
 .plans .grid-plans{
   display: grid;
@@ -115,6 +148,27 @@ nav ul li{
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+.grid-plans .btn1{
+  margin-top: 35px;
+  background: #2A95D0;
+  border-radius: 10px;
+  line-height: 28px;
+  color: #FCFCFC;
+  cursor: pointer;
+  width: 280px;
+  height: 50px;
+  border: none;
+}
+.grid-plans .btn2{
+  margin-top: 35px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  color: #2A95D0;
+  cursor: pointer;
+  width: 280px;
+  border: 1px solid #2A95D0;
+  height: 50px;
+}
 .divider{
   height: 156px;
   text-align: center;
@@ -126,4 +180,26 @@ nav ul li{
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.02em;
+}
+.whats-in{
+  padding: 0px 200px 50px 200px;
+}
+.whats-in .grid-whats{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(2,1fr);
+}
+.contact-us{
+  height: 450px;
+  background: url('./media/Rectangle\ 20.png');
+}
+footer{
+  background: #000;
+  text-align: center;
+  height: 50px;
+  color: #ffff;
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 }
