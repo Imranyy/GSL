@@ -4,10 +4,12 @@ function Plans(props) {
     const showBusiness=()=>{
         document.querySelector('.plans1').style.display='block';
         document.querySelector('.plans').style.display="none";
+        document.querySelector('.move-up-img').style.display='none';
     }
     const showHome=()=>{
         document.querySelector('.plans1').style.display='none';
         document.querySelector('.plans').style.display="block";
+        document.querySelector('.move-up-img').style.display='block';
     }
     return (
         <>
