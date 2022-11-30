@@ -32,6 +32,11 @@ nav ul li{
   text-align: center;
   background: url('./media/Rectangle\ 17.png');
 }
+.hero-image .hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero-image h1{
   display: flex;
   justify-content: center;
@@ -64,10 +69,16 @@ nav ul li{
   color: #FCFCFC;
   cursor: pointer;
 }
-.hero-image img{
+.hero-image .move-down-img{
   margin-top: 85px;
   cursor: pointer;
   width: 30px;
+}
+.hero-image .move-up-img{
+  margin-top: 85px;
+  cursor: pointer;
+  width: 30px;
+  transform: rotate(180deg);
 }
 .plans{
   padding-top:30px;
