@@ -2,6 +2,8 @@ import React from 'react';
 
 function Navbar(props) {
     const plans=()=>{
+        document.querySelector('.plans1').style.display='none';
+        document.querySelector('.plans').style.display="block";
         document.querySelector('.plans').scrollIntoView();
     }
     const services=()=>{

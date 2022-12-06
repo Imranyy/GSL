@@ -20,7 +20,7 @@ function HeroImage(props) {
                 <div className='hero-content'>
                     <h1>SUPER <div className='blue'>FAST</div> SPEEDS at <div className='blue'>AFFORDABLE</div> RATES </h1>
                     <p>GSL brings to Kisumu internet with INCREDIBLE SPEEDS at AFFORDABLE RATES </p>
-                    <button>ORDER NOW</button><br/>
+                    <button onClick={showPlans}>ORDER NOW</button><br/>
                     <img src={vector} className='move-down-img' alt="..." onClick={showPlans}/>
                     <img src={vector} style={{display:'none'}} alt="..." className='move-up-img' onClick={close}/>
                 </div>

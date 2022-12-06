@@ -40,10 +40,10 @@ function WhatsInForYou(props) {
     return (
        <div className='whats-in'>
             <div className='grid-whats'>
-                <div style={{cursor:'pointer'}}><img className='img1'  onMouseEnter={show1} onMouseOut={dontShow1} src={img1} alt='..'/><div style={{display:'none'}} className='grid-item-whats1'><p>Unlimited Internet and VoIP calls</p></div></div>
-                <div style={{cursor:'pointer'}}><img className='img2' onMouseEnter={show2} onMouseOut={dontShow2} src={img2} alt='..'/><div style={{display:'none'}} className='grid-item-whats2'><p>Customer Data Protection</p></div></div>
-                <div style={{cursor:'pointer'}}><img className='img3' onMouseEnter={show3} onMouseOut={dontShow3} src={img3} alt=".."/><div style={{display:'none'}} className='grid-item-whats3'><p>HD Surveillance Streaming</p></div></div>
-                <div style={{cursor:'pointer'}}><img className='img4' onMouseEnter={show4} onMouseOut={dontShow4} src={img4} alt=".."/><div style={{display:'none'}} className='grid-item-whats4'><p>HD Video Streaming</p></div></div>
+                <div style={{cursor:'pointer'}}><img className='img1' onClick={show1}  onMouseOver={show1} onMouseLeave={dontShow1} src={img1} alt='..'/><div style={{display:'none'}} className='grid-item-whats1'><p>Unlimited Internet and VoIP calls</p></div></div>
+                <div style={{cursor:'pointer'}}><img className='img2' onClick={show2} onMouseOver={show2} onMouseLeave={dontShow2} src={img2} alt='..'/><div style={{display:'none'}} className='grid-item-whats2'><p>Customer Data Protection</p></div></div>
+                <div style={{cursor:'pointer'}}><img className='img3' onClick={show3} onMouseOver={show3} onMouseLeave={dontShow3} src={img3} alt=".."/><div style={{display:'none'}} className='grid-item-whats3'><p>HD Surveillance Streaming</p></div></div>
+                <div style={{cursor:'pointer'}}><img className='img4' onClick={show4} onMouseOver={show4} onMouseLeave={dontShow4} src={img4} alt=".."/><div style={{display:'none'}} className='grid-item-whats4'><p>HD Video Streaming</p></div></div>
             </div>
        </div>
     );

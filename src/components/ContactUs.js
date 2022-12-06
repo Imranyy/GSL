@@ -1,8 +1,41 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import emailVector from '../media/email.png';
+import whatsappVector from '../media/whatsapp.png';
+import callVector from '../media/call.png';
+import worldVector from '../media/world.png';
 function ContactUs(props) {
-    const sendMessage=async()=>{
-
+    const [name,setName]=useState('');
+    const [message,setMessage]=useState('');
+    const [phone,setPhone]=useState(0);
+    const [location,setLocation]=useState('');
+    const [email,setEmail]=useState('');
+    const [sendBtn,setSendBtn]=useState(<button>Send Message</button>);
+    const sendMessage=async(e)=>{
+        e.preventDefault();
+        try{
+            setSendBtn(
+            <>
+                <button disabled style={{background:"grey"}}><i>Sending Message..</i></button>
+            </>)
+            const url='';
+            await fetch(url,{
+                method:"POST",
+                body:JSON.stringify(({
+                    name,
+                    location,
+                    phone,
+                    email,
+                    message,
+                })),
+                headers:{
+                    "content-type":'application/json'
+                }
+            })
+            setSendBtn(<button>Send Message</button>);
+        }catch (err){
+            setSendBtn(<button>Send Message</button>);
+            console.log(err.message);
+        }
     }
     return (
         <div className='contact-us'>
@@ -14,11 +47,11 @@ function ContactUs(props) {
                 <div className='grid-contact-item'>
                     <h2>Find Us on</h2>
                     <p>Talk to us whenever, wherever, we’ll listen.</p> 
-                    <ul>
-                        <li>sales@globilinksolutions.com</li>
-                        <li>www.globilinksolutions.com/</li>
-                        <li>+254 799 507 509</li>
-                        <li>+254 793 486 784</li>
+                    <ul className='contact-list'>
+                        <li><a href='#' target='_blank'><img src={emailVector} alt='..'/>  sales@globilinksolutions.com</a></li>
+                        <li><a href='#' target="_blank"><img src={worldVector} alt='..'/>  www.globilinksolutions.com/</a></li>
+                        <li><a href='#' target="_blank"><img src={whatsappVector} alt='..'/>  +254 799 507 509</a></li>
+                        <li><a href='#' target="_blank"><img src={callVector} alt='..'/>  +254 793 486 784</a></li>
                     </ul>
                 </div>
                 <div className='grid-contact-item'>
@@ -26,28 +59,28 @@ function ContactUs(props) {
                         <div className='input'>
                             <div className='opt'>
                                 <label>Name</label>
-                                <input type='text' required/>
+                                <input placeholder='Jane' type='text' onChange={e=>setName(e.target.value)} required/>
                             </div>
                             <div className='opt'>
                                 <label>Location</label>
-                                <input type='text' required/>
+                                <input type='text' placeholder='Kisumu' onChange={e=>setLocation(e.target.value)} required/>
                             </div>
                         </div>
                         <div className='input'>
                             <div className='opt'>
                                 <label>Email Address</label>
-                                <input type='email' required/>
+                                <input type='email' placeholder='Janedoe@email.com' onChange={e=>setEmail(e.target.value)} required/>
                             </div>
                             <div className='opt'>
                                 <label>Phone Number</label>
-                                <input type='number' required/>
+                                <input type='number' placeholder='+254 12345678' onChange={e=>setPhone(e.target.value)} required/>
                             </div>
                         </div>
                         <div className='opt'>
                             <label>Message</label>
-                            <textarea required></textarea>
+                            <textarea onChange={e=>setMessage(e.target.value)} required></textarea>
                         </div>
-                        <button>Send Message</button>
+                        {sendBtn}
                     </form>
                 </div>
             </div>

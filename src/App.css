@@ -6,12 +6,19 @@
 }
 nav{
   color: white;
+  font-weight: 700;
   display: flex;
+  position:fixed;
+  background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+  top:0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 nav .logo{
   background: url('./media/Globilink\ Logo\ 1.png');
   width: 137px;
-  height: 116px;
+  height: 100px;
 }
 nav ul{
   list-style: none;
@@ -24,10 +31,13 @@ nav ul li{
   padding-left: 30px;
   cursor: pointer;
 }
+nav ul li:hover{
+  color: #2A95D0;
+}
 .hero-image{
-  padding-top: 10px;
+  padding-top: 120px;
   padding-left: 4%;
-  height: 450px;
+  height: 370px;
   color: white;
   text-align: center;
   background: url('./media/Rectangle\ 17.png');
@@ -79,6 +89,19 @@ nav ul li{
   cursor: pointer;
   width: 30px;
   transform: rotate(180deg);
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: #2A95D0;
+}
+.plans ul,.plans1 ul{
+  margin-top: 20px;
+}
+.plans li, .plans1 li{
+  list-style: none;
 }
 .plans{
   padding-top:30px;
@@ -138,6 +161,16 @@ nav ul li{
   border: 1.13836px solid #2A95D0;
   box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
 }
+.grid-item-plan1 img, .grid-item-plan3 img{
+  margin: 0 0 0 5px;
+  width: 20px;
+  height: 20px;
+}
+.grid-item-plan2 img{
+  margin: 0 0 0 5px;
+  width: 20px;
+  height: 20px;
+}
 .grid-item-plan2{
   text-align: center;
   padding: 25px 40px 23px 40px;
@@ -153,6 +186,7 @@ nav ul li{
   letter-spacing: 0.02em;
 }
 .grid-plans .content{
+  text-align: left;
   box-sizing: border-box;
   width: 280px;
   height: 200px;
@@ -180,6 +214,14 @@ nav ul li{
   border: 1px solid #2A95D0;
   height: 50px;
 }
+.contact-list{
+  margin-top: 50px;
+}
+.contact-list li{
+  margin-top:20px;
+  list-style:none;
+}
+
 .plans1{
   padding-top:30px;
   height: 742px;
@@ -253,7 +295,16 @@ nav ul li{
   line-height: 26px;
   letter-spacing: 0.02em;
 }
+.grid-item-plan1 h1,.grid-item-plan3 h1{
+  color: #000;
+  margin:0 0 10px -20px;
+}
+.grid-plans1 p,.grid-plans p{
+  font-weight: 700;
+  margin: 5px 0 5px  0;
+}
 .grid-plans1 .content{
+  text-align: left;
   box-sizing: border-box;
   width: 280px;
   height: 200px;
@@ -430,4 +481,10 @@ footer{
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+}
+@supports(backdrop-filter: blur(2rem)){
+  nav{
+    background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+    backdrop-filter: blur(1rem);
+  }
 }
