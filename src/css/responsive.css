@@ -1,0 +1,353 @@
+
+@media screen and (max-width:1250px) {
+    .plans .grid-plans,.plans1 .grid-plans{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 5px;
+      }
+      .grid-plans .grid-item-plan1, .grid-plans .grid-item-plan2,.grid-plans .grid-item-plan3,.grid-plans1 .grid-item-plan1, .grid-plans1 .grid-item-plan2,.grid-plans1 .grid-item-plan3{
+        width:fit-content;
+        height: 350px;
+      }
+      .grid-plans .grid-item-plan1,.grid-plans .grid-item-plan3,.grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan3{
+        text-align: center;
+        padding: 25px 5px 23px 5px;
+        font-size: small;
+      }
+      .grid-plans .grid-item-plan2,.grid-plans1 .grid-item-plan2{
+        font-size: small;
+        text-align: center;
+        padding: 25px 5px 23px 5px;
+      }
+      .grid-plans .content,.grid-plans1 .content{
+        position: relative;
+        left: 15%;
+        right: 10px;
+        width: fit-content;
+      }
+      .grid-plans .btn1,.grid-plans1 .btn1{
+        margin-top: 6px;
+        width: 150px;
+        height: 40px;
+        border: none;
+      }
+      .grid-plans .btn2,.grid-plans1 .btn2{
+        margin-top: 10px;
+        height: 40px;
+        width: 150px;
+      }
+}
+
+@media screen and (max-width:1100px) {
+  .whats-in .grid-whats{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media screen and (max-width:1200px) {
+    .hero-image{
+        height: 350px;
+      }
+    .hero-image h1{
+        font-size: 35px;
+      }
+      .hero-image p{
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .plans, .plans1{
+        height: fit-content;
+    }
+      .plans .grid-plans,.plans1 .grid-plans1{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+        padding: 20px 10% 50px 10%;
+      }
+      .contact-us{
+        height: 850px;
+        padding: 50px 100px 80px 50px;
+      }
+      .contact-us .heading{
+        text-align:center;
+      }
+      .contact-us .grid-contact{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 50px;
+      }
+    }
+@media screen and (max-width:900px) {
+  .hero-image h1{
+        font-size: 25px;
+      }
+      .hero-image p{
+        font-weight: 300;
+        font-size: 13px;
+      }
+      .contact-us .grid-contact{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 50px;
+      }
+      form .input{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+      .opt{
+        padding-top: 10px;
+      }
+      input{
+        width: 250px;
+        padding-left: 10px;
+        color:white;
+        height: 40px;
+        border: 3px solid #FFFFFF;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+      }
+      textarea{
+        padding-left: 10px;
+        color:white;
+        width: 250px;
+        height: 150px;
+        border: 3px solid #FFFFFF;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+      }
+      form button{
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 10px 0 0 20px;
+      }
+    }
+@media screen and (max-width:800px) {
+    nav ul li{
+        display: none;
+    }
+    nav .show-menu{
+        display: block;
+      }
+    .hero-image h1{
+        font-size: 22px;
+      }
+      .hero-image p{
+        font-weight: 300;
+        font-size: 13px;
+      }
+      .plans, .plans1{
+        height: fit-content;
+    }
+      .plans .grid-plans, .plans1 .grid-plans1{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 25px;
+        padding: 20px 25% 50px 25%;
+      }
+      .grid-whats img{
+        width: 300px;
+        height: 250px;
+      }
+      .grid-whats .grid-item-whats1,.grid-whats .grid-item-whats2,.grid-whats .grid-item-whats3,.grid-whats .grid-item-whats4{
+        width: 300px;
+        height: 250px;
+      }
+      .grid-whats p{
+        padding-top: 200px;
+        text-align: center;
+        height: 28px;
+        font-weight: 100;
+        font-size: small;
+        line-height: 28px;
+      }
+      .service .content{
+        width: 200px;
+        padding: 180px 20px 20px 50px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    @media screen and (max-width:650px) {
+      .hero-image{
+        height: fit-content;
+        padding-bottom: 20px;
+      }
+      .hero-image button{
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: small;
+      }
+      .hero-image .move-down-img{
+        margin-top: 45px;
+        cursor: pointer;
+        width: 30px;
+      }
+      .hero-image .move-up-img{
+        margin-top: 45px;
+        cursor: pointer;
+        width: 30px;
+      }
+      .plans h1,.plans1 h1{
+        width: 250px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 55px;
+        letter-spacing: 0.02em;
+      }
+      .plans-button,.plans1-butto{
+        margin-top: 15px;
+      }
+      .plans-button .btn1,.plans1-button .btn1{
+        border-radius: 5px;
+        line-height: 28px;
+        width: 100px;
+        height: 50px;
+      }
+      .plans-button .btn2,.plans1-button .btn2{
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        margin-left: 41px;
+      }
+      .grid-plans .content,.grid-plans1 .content{
+        margin-left: -20px;
+        margin-top: 10px;
+        text-align: left;
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+      .divider h1{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 35px;
+      }
+      .contact-us{
+        padding-left: 50px;
+        height: fit-content;
+      }
+      .contact-us .heading{
+        text-align:left;
+      }
+      .contact-us .grid-contact{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 50px;
+      }
+      .contact-list{
+        margin-top: 0px;
+      }
+      form .input{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+      .opt{
+        padding-top: 10px;
+      }
+      input{
+        width: 250px;
+        padding-left: 10px;
+        color:white;
+        height: 40px;
+        border: 3px solid #FFFFFF;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+      }
+      textarea{
+        padding-left: 10px;
+        color:white;
+        width: 250px;
+        height: 150px;
+        border: 3px solid #FFFFFF;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
+      }
+      form button{
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 10px 0 0 20px;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      .hero-image h1{
+        font-size: 15px;
+        font-weight: 300;
+        width: 250px;
+      }
+      .hero-image p{
+        font-weight: 300;
+        font-size: 15px;
+        width: 250px;
+        padding-bottom: 50px;
+      }
+      .grid-whats img{
+        width: 200px;
+        height: 200px;
+      }
+      .grid-whats .grid-item-whats1,.grid-whats .grid-item-whats2,.grid-whats .grid-item-whats3,.grid-whats .grid-item-whats4{
+        width: 200px;
+        height: 200px;
+      }
+      .grid-whats p{
+        padding-top: 100px;
+        text-align: center;
+        height: 28px;
+        font-weight: 100;
+        font-size: small;
+        line-height: 28px;
+      }
+    }
+    @media screen and (max-width:350px) {
+      .hero-image h1{
+        font-size: 12px;
+        font-weight: 300;
+        width: 200px;
+      }
+      .hero-image p{
+        font-weight: 300;
+        font-size: 15px;
+        width: 200px;
+        padding-bottom: 50px;
+      }
+      form{
+        margin-left: -50px;
+      }
+      input{
+          width: 200px;
+      }
+      textarea{
+        width: 200px;
+      }
+    }
+
+@supports(backdrop-filter: blur(2rem)){
+    nav{
+      background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+      backdrop-filter: blur(1rem);
+    }
+    .nav-menu{
+      background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+      backdrop-filter: blur(1rem);
+    }
+  }
