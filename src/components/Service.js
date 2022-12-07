@@ -2,15 +2,14 @@ import React from 'react';
 import Slider from 'react-slick';
 function Service(props) {
     const settings={
-        dots:true,
-        Infinite:true,
+        Infinite:false,
         speed:500,
         slidesToShow:1,
         slidesToScroll:1
     }
     return (
-        <div className='service'>
-            <Slider {...settings}>
+        <>
+            <Slider className='service' {...settings}>
                 <div className='grid-item-service1'>
                     <div className='content'>
                         <h2>Internet Services</h2>
@@ -30,7 +29,7 @@ function Service(props) {
                     </div>
                 </div>
             </Slider>
-        </div>
+        </>
     );
 }
 
