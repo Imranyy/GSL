@@ -6,6 +6,7 @@ function Navbar(props) {
         document.querySelector('.plans').style.display="block";
         document.querySelector('.plans').scrollIntoView();
         document.querySelector('.move-up-img').style.display='block';
+        document.querySelector('.move-down-img').style.display='none';
         closeMenu()
     }
     const services=()=>{
@@ -16,6 +17,7 @@ function Navbar(props) {
         document.querySelector('.plans1').style.display='block';
         document.querySelector('.plans').style.display="none";
         document.querySelector('.plans1').scrollIntoView();
+        document.querySelector('.move-down-img').style.display='none';
         document.querySelector('.move-up-img').style.display='none';
         closeMenu()
     }
