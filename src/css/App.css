@@ -78,7 +78,8 @@ nav .show-menu{
   height: 370px;
   color: white;
   text-align: center;
-  background: url('../media/Rectangle\ 17.png');
+  background: url('../media/Rectangle\ 17.png') no-repeat;
+  background-size: cover;
 }
 .hero-image .hero-content{
   display: flex;
@@ -407,11 +408,13 @@ a:hover{
    width: 500px;
    height: 300px;
    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 4.png');
+  background-size: cover;
    cursor: pointer;
   }
   .grid-whats .grid-item-whats2{
   width: 500px;
   height: 300px;
+  background-size: cover;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 8.png');
   cursor: pointer;
   
@@ -419,6 +422,7 @@ a:hover{
 .grid-whats .grid-item-whats3{
   width: 500px;
   height: 300px;
+  background-size: cover;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 9.png');
   cursor: pointer;
   
@@ -426,6 +430,7 @@ a:hover{
 .grid-whats .grid-item-whats4{
   width: 500px;
   height: 300px;
+  background-size: cover;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 13.png');
   cursor: pointer;
 
@@ -446,16 +451,19 @@ a:hover{
   margin: -20px 0 -20px 0;
 }
 .grid-item-service1{
+  background-size: cover;
   background: url('../media/Rectangle\ 29.png') no-repeat;
   height: 450px;
   background-size: 100%;
 }
 .grid-item-service2{
+  background-size: cover;
   background: url('../media/Rectangle\ 30.png') no-repeat;
   height: 450px;
   background-size: 100%;
 }
 .grid-item-service3{
+  background-size: cover;
   background: url('../media/Rectangle\ 31.png') no-repeat;
   height: 450px;
   background-size: 100%;
@@ -472,6 +480,7 @@ a:hover{
 
 .contact-us{
   height: 450px;
+  background-size: cover;
   background: url('../media/Rectangle\ 20.png');
   color:#ffff;
   padding: 50px 100px 80px 50px;
