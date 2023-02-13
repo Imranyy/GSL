@@ -21,7 +21,7 @@ function Plans(pro1s){
     return (
         <>
         {/* Home */}
-            <div className='plans' style={{display:'none'}}>
+            <div className='plans' >
                 <h1>Internet Plans</h1>
                 <div className='plans-button'>
                     <button className='btn1' >Home</button>

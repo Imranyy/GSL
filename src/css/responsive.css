@@ -164,6 +164,12 @@
         font-weight: 300;
         font-size: 13px;
       }
+      .plans{
+        display: block;
+      }
+      .move-down-img,.move-up-img{
+        display: none;
+      }
       .plans, .plans1{
         height: fit-content;
     }
