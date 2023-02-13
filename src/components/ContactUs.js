@@ -37,8 +37,12 @@ function ContactUs(props) {
             console.log(err.message);
         }
     }
+    const map=`https://maps.google.com/maps?q=nairobi&t=&z=15&ie=UTF8&iwloc=&output=embed`;
     return (
         <div className='contact-us'>
+            {/* map iframe */}
+            <iframe className='gmap' width="600" height="500" id="gmap_canvas" src={map} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+
             <div className='heading'>
                 <h2>Contact Us</h2>
                 <p>Interested in any of our services? Tell us!</p>

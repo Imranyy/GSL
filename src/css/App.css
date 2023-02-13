@@ -382,9 +382,11 @@ a:hover{
   height: 50px;
 }
 .divider{
-  height: 156px;
+  padding: 20px 0;
+  margin: 10px 0;
   text-align: center;
   background: var(--white);
+  border-top:1px solid #E5E5E5;
 }
 .divider h1{
   height: 55px;
@@ -456,35 +458,20 @@ a:hover{
 }
 
 .service{
-  padding-top: 50px;
-  margin: -20px 0 -20px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 0 50px 100px 50px;
 }
-.grid-item-service1{
-  background-size: cover;
-  background: url('../media/Rectangle\ 29.png') no-repeat;
-  height: 450px;
-  background-size: 100%;
+.service .grid-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 25px;
+  padding: 10px 0;
 }
-.grid-item-service2{
-  background-size: cover;
-  background: url('../media/Rectangle\ 30.png') no-repeat;
-  height: 450px;
-  background-size: 100%;
-}
-.grid-item-service3{
-  background-size: cover;
-  background: url('../media/Rectangle\ 31.png') no-repeat;
-  height: 450px;
-  background-size: 100%;
-}
-.service .content{
-  width: 400px;
-  padding: 190px 20px 20px 50px;
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 41px;
-  letter-spacing: 0.02em;
+.service .grid-item h2{
+  padding: 10px  0;
 }
 
 .contact-us{

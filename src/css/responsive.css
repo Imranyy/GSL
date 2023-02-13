@@ -169,15 +169,7 @@
         font-size: small;
         line-height: 28px;
       }
-      .service .content{
-        width: 200px;
-        padding: 180px 20px 20px 50px;
-        color: #FFFFFF;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-      }
+      
     }
 
     @media screen and (max-width:650px) {

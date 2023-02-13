@@ -1,35 +1,80 @@
 import React from 'react';
-import Slider from 'react-slick';
+import cctv from "../media/cctv.png"
+import wifi from "../media/wifi.png"
+import fence from "../media/fence.png"
+import security from "../media/security.png"
+import park from "../media/park.png"
+import game from "../media/game.png"
+import code from "../media/code.png"
+import luggage from "../media/luggage.png"
+import tray from "../media/tray.png"
 function Service(props) {
-    const settings={
-        Infinite:false,
-        speed:500,
-        slidesToShow:1,
-        slidesToScroll:1
-    }
+    const services=[
+        {
+            id:1,
+            image:wifi,
+            header:"Internet Services",
+            text:"Globilink Solution Limited offer fast, reliable and secure internet services depending on client’s needs. We have different packages for home and Small Medium Enterprises (SME), having benefits for super clear HD VoIP calls, HD surveillance streaming, symmetric internet and most important, customer’s data security."
+        },
+        {
+            id:2,
+            image:cctv,
+            header:"CCTV sales and installation",
+            text:"Due to major security concerns, we do all type of CCTV camera installations ranging from IP Cameras, Digital HD Cameras, Parking Security Cameras, Traffic Control Cameras, Border Control Cameras, just to mention a few. We also sell CCTV cameras that suites client’s needs."
+        },
+        {
+            id:3,
+            image:fence,
+            header:"Electric Fencing and Alarm System",
+            text:"We got all our clients who would like to get rid of physical intrusion covered by providing solutions for electric fencing and alarm systems so that they are protected from external attacks."
+        },
+        {
+            id:4,
+            image:security,
+            header:"Network Security and Analysis",
+            text:"Apart from connecting clients to the internet, we also understand all cyber threats existing and that is why we developed a skilled personnel that always ensure that all our clients who are connected to our network are given free access to network security. We also provide the same service to enterprises who also value organization’s data."
+        },
+        {
+            id:5,
+            image:game,
+            header:"Structured Cabling and Computer Networking",
+            text:"Globilink Solution Limited has a specialized dedicated team that performs cable management and neatly organizing them in network cabinets and server racks. We also do both small, medium and large enterprise computer networking to allow ease of communication flow to institutions such as Banks, Hospitals, Campuses, Government Offices, Schools, Stadiums and Offices."
+        },
+        {
+            id:6,
+            image:code,
+            header:"Web Design and Development",
+            text:"Globilink Solution has a team of excellent front end, back end and full stack developers that have exceled in their field of developing, designing and maintaining websites. We have designed interactive dynamic websites to organizations countrywide."
+        },
+        {
+            id:7,
+            image:tray,
+            header:"IT Consultancy",
+            text:"We provide solutions and technology consultation sessions to our clients to help them decide and opt for what is best for their businesses and institutions."
+        },
+        {
+            id:8,
+            image:luggage,
+            header:"Luggage Inspection Units",
+            text:"By assisting clients with the use of luggage inspection units and providing clear instructions and guidance, they can confidently and efficiently inspect their luggage on the ISP platform, ensuring the security and safety of their belongings."
+        },
+        {
+            id:9,
+            image:park,
+            header:"Intelligent Parking Services",
+            text:"By guiding clients through the use of intelligent parking services on the ISP platform and providing support in navigating the platform's features, they can easily find and reserve the most convenient and secure parking spaces, enhancing their overall parking experience."
+        }
+    ]
     return (
-        <>
-            <Slider className='service' {...settings}>
-                <div className='grid-item-service1'>
-                    <div className='content'>
-                        <h2>Internet Services</h2>
-                        <p>We make it possible for customers to access the internet while also providing additional services such as email, domain registration and web hosting.</p>
-                    </div>
+        <div className='service'>
+            {services.map(i=>(
+                <div className='grid-item' key={i.id}>
+                    <img src={i.image} alt='..'/>
+                    <h2>{i.header}</h2>
+                    <p>{i.text}</p>
                 </div>
-                <div className='grid-item-service2'>
-                    <div className='content'>
-                        <h2>CCTV Sales and Installation</h2>
-                        <p>We make it possible for customers to access the internet while also providing additional services such as email, domain registration and web hosting.</p>
-                    </div>
-                </div>
-                <div className='grid-item-service3'>
-                    <div className='content'>
-                        <h2>Electric Fencing and Alarm System</h2>
-                        <p>We make it possible for customers to access the internet while also providing additional services such as email, domain registration and web hosting.</p>
-                    </div>
-                </div>
-            </Slider>
-        </>
+            ))}
+        </div>
     );
 }
 
