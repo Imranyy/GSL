@@ -26,10 +26,10 @@ function Navbar(props) {
         closeMenu()
     }
     const showMenu=()=>{
-        document.querySelector('.nav-menu').style.display="block";
+        document.querySelector('.nav-menu-bg').style.display="block";
     }
     const closeMenu=()=>{
-        document.querySelector('.nav-menu').style.display="none";
+        document.querySelector('.nav-menu-bg').style.display="none";
     }
     return (
         <>
@@ -40,18 +40,19 @@ function Navbar(props) {
                     <li onClick={services}>Services</li>
                     <li onClick={business}>Business</li>
                     <li onClick={contact}>call +254793486784</li>
-                    <li className='show-menu' onClick={showMenu}>Menu</li>
+                    <li className='show-menu' onClick={showMenu}><i className='fa fa-list'></i></li>
                 </ul>
             </nav>  
-            <div className='nav-menu'>
-                <div className='close-menu' onClick={closeMenu}>Close</div>
-                <ul>
-                    <li onClick={plans}>Plans</li>
-                    <li onClick={services}>Services</li>
-                    <li onClick={business}>Business</li>
-                    <li onClick={contact}>call +254793486784</li>
-                </ul>
-            </div> 
+            <div className='nav-menu-bg' onClick={closeMenu}>
+                <div className='nav-menu'>
+                    <ul>
+                        <li onClick={plans}>Plans</li>
+                        <li onClick={services}>Services</li>
+                        <li onClick={business}>Business</li>
+                        <li onClick={contact}>call +254793486784</li>
+                    </ul>
+                </div> 
+            </div>
         </>
     );
 }

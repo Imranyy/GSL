@@ -18,7 +18,7 @@ function HeroImage(props) {
             <div className='hero-image'>
                 <Navbar/>
                 <div className='hero-content'>
-                    <h1>SUPER <div className='blue'>FAST</div> SPEEDS at <div className='blue'>AFFORDABLE</div> RATES </h1>
+                    <h1>SUPER <span className='blue'>FAST</span> SPEEDS at <span className='blue'>AFFORDABLE</span> RATES </h1>
                     <p>GSL brings to Kisumu internet with INCREDIBLE SPEEDS at AFFORDABLE RATES </p>
                     <button onClick={showPlans} onDoubleClick={close}>ORDER NOW</button><br/>
                     <img src={vector} className='move-down-img' alt="..." onClick={showPlans}/>

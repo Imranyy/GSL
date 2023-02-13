@@ -4,6 +4,15 @@
   margin: 0;
   font-family: 'Ubuntu';
 }
+:root{
+  --navy-blue:#1A5C7F;
+  --navy-blue-light:#2A95D0;
+  --white:#ffff;
+  --white-grey:#FCFCFC;
+}
+html{
+  scroll-behavior:smooth;
+}
 nav{
   color: white;
   font-weight: 700;
@@ -32,73 +41,74 @@ nav ul li{
   cursor: pointer;
 }
 nav ul li:hover{
-  color: #2A95D0;
+  color: var(--navy-blue);
 }
 nav .show-menu{
   display: none;
 }
-.nav-menu{
+.nav-menu-bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   display: none;
   z-index: 100;
+  background:  rgba(72, 82, 88, 0.79);
+}
+.nav-menu{
+  z-index: 110;
   position: fixed;
   top: 0;
   right: 0;
   left: 30%;
   bottom: 0;
   background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
-  padding: min(2rem,5vh) 20px;
+  padding: 20px 50px;
 }
 .nav-menu ul{
   text-align: left;
-  padding: min(3rem,5vh);
   list-style: none;
 }
 .nav-menu ul li{
   cursor: pointer;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 35px 0 0 0;
 }
 .nav-menu ul li:hover{
-  color: #2A95D0;
+  color: var(--navy-blue);
 }
-.nav-menu .close-menu{
-  padding: 0 20px 0 0;
-   text-align: right;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 18px;
-}
-.nav-menu .close-menu:hover{
-  color: #2A95D0;
+.show-menu{
+  font-size: 25px;
 }
 .hero-image{
-  padding-top: 120px;
+  padding-top: 35vh;
   padding-left: 4%;
-  height: 370px;
-  color: white;
+  height: 60vh;
+  color: var(--white);
   text-align: center;
-  background: url('../media/Rectangle\ 17.png') no-repeat;
+  background: url('../media/Rectangle\ 17.png') no-repeat center;
   background-size: cover;
 }
 .hero-image .hero-content{
   display: flex;
   flex-direction: column;
+  line-height: 28px;
   align-items: center;
 }
 .hero-image h1{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
   height: 55px;
   font-weight: 400;
   font-size: 48px;
   line-height: 55px;
 }
-.hero-image h1 .blue{
-  color: #2A95D0;
-  margin-left: 10px;
-  margin-right: 10px;
+.blue{
+  color: var(--navy-blue);
+  margin:0 10px;
 }
 .hero-image p{
   height: 59px;
@@ -106,16 +116,15 @@ nav .show-menu{
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
   letter-spacing: 0.02em;
 }
 .hero-image button{
   width: 150px;
   height: 50px;
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
   cursor: pointer;
   border: none;
 }
@@ -163,22 +172,22 @@ a:hover{
   margin-top: 20px;
 }
 .plans-button .btn1{
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
   cursor: pointer;
   width: 150px;
   height: 50px;
   border: none;
 }
 .plans-button .btn2{
-  background: #FCFCFC;
+  background: var(--white-grey);
   border-radius: 10px;
-  color: #2A95D0;
+  color: var(--navy-blue);
   cursor: pointer;
   width: 150px;
-  border: 1px solid #2A95D0;
+  border: 1px solid var(--navy-blue);
   height: 50px;
   margin-left: 41px;
 }
@@ -197,8 +206,8 @@ a:hover{
 .grid-item-plan1, .grid-item-plan3{
   text-align: center;
   padding: 25px 40px 23px 40px;
-  background: #FCFCFC;
-  border: 1.13836px solid #2A95D0;
+  background: var(--white-grey);
+  border: 1.13836px solid var(--navy-blue);
   box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
 }
 .grid-item-plan1 img, .grid-item-plan3 img{
@@ -214,9 +223,9 @@ a:hover{
 .grid-item-plan2{
   text-align: center;
   padding: 25px 40px 23px 40px;
-  background: #2A95D0;
-  border: 1.13836px solid #FFFFFF;
-  color: white;
+  background: var(--navy-blue);
+  border: 1.13836px solid var(--white);
+  color: var(--white);
   box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
 }
 .grid-plans h2{
@@ -235,10 +244,10 @@ a:hover{
 }
 .grid-plans .btn1{
   margin-top: 35px;
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
   cursor: pointer;
   width: 280px;
   height: 50px;
@@ -246,12 +255,12 @@ a:hover{
 }
 .grid-plans .btn2{
   margin-top: 35px;
-  background: #FCFCFC;
+  background: var(--white-grey);
   border-radius: 10px;
-  color: #2A95D0;
+  color: var(--navy-blue);
   cursor: pointer;
   width: 280px;
-  border: 1px solid #2A95D0;
+  border: 1px solid var(--navy-blue);
   height: 50px;
 }
 .contact-list{
@@ -275,7 +284,7 @@ a:hover{
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.02em;
-  color: #FCFCFC;
+  color: var(--white-grey);
 }
 .plans1-button{
   display: flex;
@@ -283,19 +292,19 @@ a:hover{
   margin-top: 20px;
 }
 .plans1-button .btn2{
-  background: #FCFCFC;
+  background: var(--white-grey);
   border-radius: 10px;
-  color: #2A95D0;
+  color: var(--navy-blue);
   cursor: pointer;
   width: 150px;
-  border: 1px solid #2A95D0;
+  border: 1px solid var(--navy-blue);
   height: 50px;
 }
 .plans1-button .btn1{
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
   cursor: pointer;
   width: 150px;
   height: 50px;
@@ -317,16 +326,16 @@ a:hover{
 .grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan3{
   text-align: center;
   padding: 25px 40px 23px 40px;
-  background: #FCFCFC;
-  border: 1.13836px solid #2A95D0;
+  background: var(--white-grey);
+  border: 1.13836px solid var(--navy-blue);
   box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
 }
 .grid-plans1 .grid-item-plan2{
   text-align: center;
   padding: 25px 40px 23px 40px;
-  background: #2A95D0;
-  border: 1.13836px solid #FFFFFF;
-  color: white;
+  background: var(--navy-blue);
+  border: 1.13836px solid var(--white);
+  color: var(--white);
   box-shadow: 0px 1.13836px 1.13836px rgba(0, 0, 0, 0.25);
 }
 .grid-plans1 h2{
@@ -353,10 +362,10 @@ a:hover{
 }
 .grid-plans1 .btn1{
   margin-top: 35px;
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
   cursor: pointer;
   width: 280px;
   height: 50px;
@@ -364,18 +373,18 @@ a:hover{
 }
 .grid-plans1 .btn2{
   margin-top: 35px;
-  background: #FCFCFC;
+  background: var(--white-grey);
   border-radius: 10px;
-  color: #2A95D0;
+  color: var(--navy-blue);
   cursor: pointer;
   width: 280px;
-  border: 1px solid #2A95D0;
+  border: 1px solid var(--navy-blue);
   height: 50px;
 }
 .divider{
   height: 156px;
   text-align: center;
-  background: #FFFFFF;
+  background: var(--white);
 }
 .divider h1{
   height: 55px;
