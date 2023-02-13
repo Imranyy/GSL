@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import cctv from "../media/cctv.png"
 import wifi from "../media/wifi.png"
 import fence from "../media/fence.png"
@@ -74,12 +74,20 @@ function Service(props) {
             text:"By guiding clients through the use of intelligent parking services on the ISP platform and providing support in navigating the platform's features, they can easily find and reserve the most convenient and secure parking spaces, enhancing their overall parking experience."
         }
     ]
-    const seeMore=()=>{
-        const serviveText=document.querySelectorALL('.close')
+    const [link,setLink]=useState(<a onClick={seeMore} href='#12'>See more</a>)
+    function seeMore(){
+        const serviveText=document.querySelectorAll('.close')
         serviveText.forEach(i => {
             i.style.display="block"
-            alert(i)
         });
+        setLink(<a onClick={hide} href='#13'>Hide</a>)
+    }
+    function hide(){
+        const serviveText=document.querySelectorAll('.close')
+        serviveText.forEach(i => {
+            i.style.display="none"
+        });
+        setLink(<a onClick={seeMore} href='#12'>See more</a>)
     }
     return (
         <div className='service'>
@@ -92,7 +100,7 @@ function Service(props) {
                     </div>
                 </div>
             ))}
-            <a onClick={seeMore} href='#12'>See more</a>
+            {link}
         </div>
     );
 }

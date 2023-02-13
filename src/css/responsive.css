@@ -75,6 +75,15 @@
         gap: 20px;
         padding: 60px 50px 100px 50px;
       }
+      .service a{
+        display: block;
+      }
+      .service .close{
+        display: none;
+      }
+      .service .open{
+        display: block;
+      }
       .service .grid-item p{
         width:80vw;
       }

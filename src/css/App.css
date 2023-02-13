@@ -464,15 +464,11 @@ a:hover{
   gap: 20px;
   padding: 60px 50px 100px 50px;
 }
-.service .close{
-  display: none;
-}
-.service .open{
-  display: block;
-}
+
 .service a{
   color: var(--navy-blue);
   font-weight: 600;
+  display: none;
 }
 .service .grid-item{
   display: flex;
