@@ -1,9 +1,4 @@
 import React from 'react';
-import img1 from '../media/Rectangle 4.png';
-import img2 from '../media/Rectangle 8.png';
-import img3 from '../media/Rectangle 9.png';
-import img4 from '../media/Rectangle 13.png';
-
 function WhatsInForYou(props) {
     const show1=()=>{
         document.querySelector('.img1').style.display='none';
