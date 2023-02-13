@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import emailVector from '../media/email.png';
-import whatsappVector from '../media/whatsapp.png';
-import callVector from '../media/call.png';
-import worldVector from '../media/world.png';
 function ContactUs(props) {
     const [name,setName]=useState('');
     const [message,setMessage]=useState('');
@@ -37,28 +33,14 @@ function ContactUs(props) {
             console.log(err.message);
         }
     }
-    const map=`https://maps.google.com/maps?q=nairobi&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+    const map=`https://maps.google.com/maps?q=kisumu&t=&z=15&ie=UTF8&iwloc=&output=embed`;
     return (
         <div className='contact-us'>
-            {/* map iframe */}
-            <iframe className='gmap' width="600" height="500" id="gmap_canvas" src={map} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
-
-            <div className='heading'>
-                <h2>Contact Us</h2>
-                <p>Interested in any of our services? Tell us!</p>
-            </div>
             <div className='grid-contact'>
                 <div className='grid-contact-item'>
-                    <h2>Find Us on</h2>
-                    <p>Talk to us whenever, wherever, we’ll listen.</p> 
-                    <ul className='contact-list'>
-                        <li><a href='#' target='_blank'><img src={emailVector} alt='..'/>  sales@globilinksolutions.com</a></li>
-                        <li><a href='#' target="_blank"><img src={worldVector} alt='..'/>  www.globilinksolutions.com/</a></li>
-                        <li><a href='#' target="_blank"><img src={whatsappVector} alt='..'/>  +254 799 507 509</a></li>
-                        <li><a href='#' target="_blank"><img src={callVector} alt='..'/>  +254 793 486 784</a></li>
-                    </ul>
+                    <iframe className='gmap' id="gmap_canvas" src={map} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                 </div>
-                <div className='grid-contact-item'>
+                <div className='grid-contact-item1'>
                     <form onSubmit={sendMessage}>
                         <div className='input'>
                             <div className='opt'>

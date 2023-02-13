@@ -461,7 +461,7 @@ a:hover{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
-  padding: 0 50px 100px 50px;
+  padding: 60px 50px 100px 50px;
 }
 .service .grid-item{
   display: flex;
@@ -475,24 +475,25 @@ a:hover{
 }
 
 .contact-us{
-  height: 450px;
   background-size: cover;
   background: url('../media/Rectangle\ 20.png');
-  color:#ffff;
-  padding: 50px 100px 80px 50px;
-}
-.contact-us .heading{
-  text-align:center;
+  color:var(--white);
+  padding: 0 50px 0 0;
 }
 .contact-us .grid-contact{
-  padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+}
+.contact-us .grid-contact .grid-contact-item1{
+  padding: 50px 0 0 0;
+}
+iframe{
+  width: 45vw;
+  height: 40vw;
 }
 form{
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 form .input{
   display: flex;
@@ -505,42 +506,42 @@ form .input{
   padding-left: 20px;
 }
 input{
-  width: 345px;
-  padding-left: 10px;
-  color:white;
+  width: 20vw;
+  padding:0 10px;
+  color:var(--white);
   height: 40px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--white);
   border-radius: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
 }
 textarea{
-  padding-left: 10px;
-  color:white;
-  width: 720px;
+  padding: 10px;
+  color:var(--white);
+  width: 44vw;
   height: 150px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--white);
   border-radius: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85))
 }
 form button{
-  width: 249.31px;
+  width: 15vw;
   height: 62px;
-  background: #2A95D0;
+  background: var(--navy-blue);
   border-radius: 10px;
-  margin-left: 520px;
+  margin-left: 33vw;
   margin-top: 20px;
   border: none;
   cursor: pointer;
   font-weight: 400;
   font-size: 15px;
   line-height: 28px;
-  color: #FCFCFC;
+  color: var(--white-grey);
 }
 footer{
   background: #000;
   text-align: center;
   height: 50px;
-  color: #ffff;
+  color: var(--white);
   padding-top: 15px;
   font-weight: 400;
   font-size: 20px;

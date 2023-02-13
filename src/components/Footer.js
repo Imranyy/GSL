@@ -4,7 +4,7 @@ function Footer(props) {
     return (
         <>
             <footer>
-                GSL 2022
+                GSL 2023
             </footer>   
         </>
     );
