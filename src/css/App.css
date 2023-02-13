@@ -23,6 +23,7 @@ nav{
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 60;
 }
 nav .logo{
   background: url('../media/Globilink\ Logo\ 1.png');
@@ -144,7 +145,7 @@ a{
   color: inherit;
 }
 a:hover{
-  color: #2A95D0;
+  color: var(--navy-blue);
 }
 .plans ul,.plans1 ul{
   margin-top: 20px;
@@ -462,6 +463,16 @@ a:hover{
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
   padding: 60px 50px 100px 50px;
+}
+.service .close{
+  display: none;
+}
+.service .open{
+  display: block;
+}
+.service a{
+  color: var(--navy-blue);
+  font-weight: 600;
 }
 .service .grid-item{
   display: flex;
