@@ -45,10 +45,10 @@ function WhatsInForYou(props) {
        <>
         <div className='whats-in'>
             <div className='grid-whats'>
-                <div className='grid-item-whats1' onClick={show1}><img className='img1' src={img1} alt='..'/><p>Unlimited Internet and VoIP calls</p></div>
-                <div className='grid-item-whats2' onClick={show2}><img className='img2' src={img2} alt='..'/><p>Customer Data Protection</p></div>
-                <div className='grid-item-whats3' onClick={show3}><img className='img3' src={img3} alt=".."/><p>HD Surveillance Streaming</p></div>
-                <div className='grid-item-whats4' onClick={show4}><img className='img4' src={img4} alt=".."/><p>HD Video Streaming</p></div>
+                <div className='grid-item-whats1' onClick={show1}><p>Unlimited Internet and VoIP calls</p></div>
+                <div className='grid-item-whats2' onClick={show2}><p>Customer Data Protection</p></div>
+                <div className='grid-item-whats3' onClick={show3}><p>HD Surveillance Streaming</p></div>
+                <div className='grid-item-whats4' onClick={show4}><p>HD Video Streaming</p></div>
             </div>
        </div>
        </>

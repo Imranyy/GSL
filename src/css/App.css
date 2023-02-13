@@ -46,6 +46,9 @@ nav ul li:hover{
 }
 nav .show-menu{
   display: none;
+  font-size: 25px;
+  position: fixed;
+  right: 30px;
 }
 .nav-menu-bg{
   position: fixed;
@@ -80,9 +83,7 @@ nav .show-menu{
 .nav-menu ul li:hover{
   color: var(--navy-blue);
 }
-.show-menu{
-  font-size: 25px;
-}
+
 .hero-image{
   padding-top: 35vh;
   padding-left: 4%;
@@ -162,6 +163,7 @@ a:hover{
 .plans h1{
   margin: 0 auto;
   width: 350px;
+  text-align: center;
   height: 55px;
   font-weight: 400;
   font-size: 48px;
@@ -280,6 +282,7 @@ a:hover{
 }
 .plans1 h1{
   margin: 0 auto;
+  text-align: center;
   width: 350px;
   height: 55px;
   font-weight: 400;
@@ -405,22 +408,12 @@ a:hover{
 }
 .whats-in .grid-whats{
   display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
   grid-template-columns: repeat(2,1fr);
 }
-.grid-whats img{
-  width: 500px;
-  height: 300px;
-}
-.grid-whats img:hover{
-  display: none;
-}
-
 .grid-whats .grid-item-whats1{
    width: 500px;
    height: 300px;
-   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 4.png');
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 4.png') no-repeat center;
   background-size: cover;
    cursor: pointer;
   }
@@ -428,15 +421,14 @@ a:hover{
   width: 500px;
   height: 300px;
   background-size: cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 8.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 8.png') no-repeat center;
   cursor: pointer;
-  
 }
 .grid-whats .grid-item-whats3{
   width: 500px;
   height: 300px;
   background-size: cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 9.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 9.png') no-repeat center;
   cursor: pointer;
   
 }
@@ -444,7 +436,7 @@ a:hover{
   width: 500px;
   height: 300px;
   background-size: cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 13.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18.75%, rgba(0, 0, 0, 0.8) 62.5%),url('../media/Rectangle\ 13.png') no-repeat center;
   cursor: pointer;
 
 }
