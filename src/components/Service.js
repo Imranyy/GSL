@@ -103,7 +103,7 @@ function Service(props) {
                 >
                     <div className='grid-item' >
                         <img src={i.image} alt='..'/>
-                        <h2>{i.header}</h2>
+                        <h2 style={{textAlign:'center'}}>{i.header}</h2>
                         <p style={{textAlign:'center'}}>{i.text}</p>
                     </div>
                 </motion.div>

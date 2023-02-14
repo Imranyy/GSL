@@ -25,8 +25,7 @@ function HeroImage(props) {
                     transition={{delay:0.5}}
                 >
                     <h1>SUPER<span className='blue'> FAST </span>SPEEDS AT <span className='blue'> AFFORDABLE </span>RATES </h1>
-                    <p>GSL brings to Kisumu internet with incredible</p> 
-                    <p>speeds at affordable rates</p>
+                    <p>GSL brings to Kisumu internet with incredible speeds at affordable rates</p>
                     <motion.button 
                         onClick={showPlans} 
                         onDoubleClick={close}

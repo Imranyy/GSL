@@ -65,7 +65,12 @@
 }
 @media screen and (max-width:1200px) {
     .hero-image{
-        height: 350px;
+        padding-top: 50px;
+        height: 50vh;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
       }
     .hero-image h1{
         font-size: 35px;
@@ -89,7 +94,7 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
-        padding: 60px 50px 100px 50px;
+        padding: 20px;
       }
       .service a{
         display: block;
@@ -99,9 +104,6 @@
       }
       .service .open{
         display: block;
-      }
-      .service .grid-item p{
-        width:80vw;
       }
       iframe{
         width: 45vw;
@@ -202,8 +204,12 @@
 
     @media screen and (max-width:650px) {
       .hero-image{
-        height: fit-content;
-        padding-bottom: 20px;
+        padding-top: 80px;
+        height: 70vh;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
       }
       .hero-image button{
         width: 100px;
@@ -270,7 +276,6 @@
       .hero-image h1{
         font-size: 12px;
         font-weight: 600;
-        line-height: 25px;
         margin: 0;
         padding: 0;
       }

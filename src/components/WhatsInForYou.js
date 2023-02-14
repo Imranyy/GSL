@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 function WhatsInForYou(props) {
     const show1=()=>{
         document.querySelector('.img1').style.display='none';
@@ -40,10 +41,10 @@ function WhatsInForYou(props) {
        <>
         <div className='whats-in'>
             <div className='grid-whats'>
-                <div className='grid-item-whats1' onClick={show1}><p>Unlimited Internet and VoIP calls</p></div>
-                <div className='grid-item-whats2' onClick={show2}><p>Customer Data Protection</p></div>
-                <div className='grid-item-whats3' onClick={show3}><p>HD Surveillance Streaming</p></div>
-                <div className='grid-item-whats4' onClick={show4}><p>HD Video Streaming</p></div>
+                <div className='grid-item-whats1' onClick={show1}><motion.p initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>Unlimited Internet and VoIP calls</motion.p></div>
+                <div className='grid-item-whats2' onClick={show2}><motion.p initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>Customer Data Protection</motion.p></div>
+                <div className='grid-item-whats3' onClick={show3}><motion.p initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>HD Surveillance Streaming</motion.p></div>
+                <div className='grid-item-whats4' onClick={show4}><motion.p initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>HD Video Streaming</motion.p></div>
             </div>
        </div>
        </>
