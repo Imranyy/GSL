@@ -7,7 +7,8 @@ import park from "../media/park.png"
 import game from "../media/game.png"
 import code from "../media/code.png"
 import luggage from "../media/luggage.png"
-import tray from "../media/tray.png"
+import tray from "../media/tray.png";
+import { motion } from 'framer-motion';
 function Service(props) {
     const services=[
         {
@@ -92,13 +93,20 @@ function Service(props) {
     return (
         <div className='service'>
             {services.map(i=>(
-                <div className={i.class}>
-                    <div className='grid-item' key={i.id}>
+                <motion.div 
+                    className={i.class} 
+                    key={i.id} 
+                    initial={{scale:0}}
+                    whileInView={{scale:1,type:'spring', stiffness:300}}
+                    transition={{duration:1}}
+                    viewport={{ once: true }}
+                >
+                    <div className='grid-item' >
                         <img src={i.image} alt='..'/>
                         <h2>{i.header}</h2>
-                        <p>{i.text}</p>
+                        <p style={{textAlign:'center'}}>{i.text}</p>
                     </div>
-                </div>
+                </motion.div>
             ))}
             {link}
         </div>

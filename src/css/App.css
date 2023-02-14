@@ -96,7 +96,6 @@ nav .show-menu{
 .hero-image .hero-content{
   display: flex;
   flex-direction: column;
-  line-height: 28px;
   align-items: center;
 }
 .hero-image h1{
@@ -110,10 +109,9 @@ nav .show-menu{
   line-height: 55px;
 }
 .blue{
-  color: var(--navy-blue);
+  color: var(--navy-blue-light);
 }
 .hero-image p{
-  height: 59px;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
@@ -121,9 +119,10 @@ nav .show-menu{
   letter-spacing: 0.02em;
 }
 .hero-image button{
+  margin: 20px 0;
   width: 150px;
   height: 50px;
-  background: var(--navy-blue);
+  background: var(--navy-blue-light);
   border-radius: 10px;
   line-height: 28px;
   color: var(--white-grey);
@@ -131,12 +130,12 @@ nav .show-menu{
   border: none;
 }
 .hero-image .move-down-img{
-  margin-top: 85px;
+  margin-top: 60px;
   cursor: pointer;
   width: 30px;
 }
 .hero-image .move-up-img{
-  margin-top: 85px;
+  margin-top: 60px;
   cursor: pointer;
   width: 30px;
   transform: rotate(180deg);
@@ -448,7 +447,7 @@ a:hover{
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: var(--white-grey);
 }
 
 .service{
@@ -528,7 +527,7 @@ form button{
   height: 62px;
   background: var(--navy-blue);
   border-radius: 10px;
-  margin-left: 33vw;
+  margin-left: 31vw;
   margin-top: 20px;
   border: none;
   cursor: pointer;

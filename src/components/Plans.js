@@ -7,6 +7,7 @@ import vect5 from '../media/arcticonWhite.png';
 import vect6 from '../media/carbonWhite.png';
 import vect7 from '../media/fluentWhite.png';
 import vect8 from '../media/cctvWhite.png';
+import {motion} from 'framer-motion'
 function Plans(pro1s){
     const showBusiness=()=>{
         document.querySelector('.plans1').style.display='block';
@@ -21,7 +22,12 @@ function Plans(pro1s){
     return (
         <>
         {/* Home */}
-            <div className='plans' >
+            <motion.div 
+                className='plans'
+                initial={{opacity:0}}
+                animate={{opacity:1}} 
+                transition={{duration:2}}
+            >
                 <h1>Internet Plans</h1>
                 <div className='plans-button'>
                     <button className='btn1' >Home</button>
@@ -73,7 +79,7 @@ function Plans(pro1s){
                         <button className='btn1'>KSH 10999/mo</button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             {/* Business */}
             <div className='plans1' style={{display:'none'}}>
                 <h1>Internet Plans</h1>

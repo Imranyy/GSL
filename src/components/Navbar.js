@@ -1,4 +1,5 @@
 import React from 'react';
+import {AiOutlineMenu} from 'react-icons/ai'
 
 function Navbar(props) {
     const plans=()=>{
@@ -21,10 +22,7 @@ function Navbar(props) {
         document.querySelector('.move-up-img').style.display='none';
         closeMenu()
     }
-    const contact=()=>{
-        document.querySelector('.contact-us').scrollIntoView();
-        closeMenu()
-    }
+    
     const showMenu=()=>{
         document.querySelector('.nav-menu-bg').style.display="block";
     }
@@ -39,8 +37,8 @@ function Navbar(props) {
                     <li onClick={plans}>Plans</li>
                     <li onClick={services}>Services</li>
                     <li onClick={business}>Business</li>
-                    <li onClick={contact}>call +254793486784</li>
-                    <li className='show-menu' onClick={showMenu}><i className='fa fa-list'></i></li>
+                    <li><a href='tel:0793486784' target="_blank" rel='noreferrer'>call +254793486784</a></li>
+                    <li className='show-menu' onClick={showMenu}><AiOutlineMenu size={30}/></li>
                 </ul>
             </nav>  
             <div className='nav-menu-bg' onClick={closeMenu}>
@@ -49,7 +47,7 @@ function Navbar(props) {
                         <li onClick={plans}>Plans</li>
                         <li onClick={services}>Services</li>
                         <li onClick={business}>Business</li>
-                        <li onClick={contact}>call +254793486784</li>
+                        <li><a href='tel:0793486784' target="_blank" rel='noreferrer'>call +254793486784</a></li>
                     </ul>
                 </div> 
             </div>
