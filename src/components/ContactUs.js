@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {facility} from './location/getUserLocation'
 function ContactUs(props) {
     const [name,setName]=useState('');
     const [message,setMessage]=useState('');
@@ -33,7 +34,7 @@ function ContactUs(props) {
             console.log(err.message);
         }
     }
-    const map=`https://maps.google.com/maps?q=kisumu&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+    const map=`https://maps.google.com/maps?q=${facility}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
     return (
         <div className='contact-us'>
             <div className='grid-contact'>
