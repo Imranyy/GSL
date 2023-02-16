@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import {facility} from './location/getUserLocation'
+import {location} from './location/getUserLocation'
 function ContactUs(props) {
     const [name,setName]=useState('');
     const [message,setMessage]=useState('');
     const [phone,setPhone]=useState(0);
-    const [location,setLocation]=useState('');
     const [email,setEmail]=useState('');
     const [sendBtn,setSendBtn]=useState(<button>Send Message</button>);
     const sendMessage=async(e)=>{
@@ -34,7 +33,7 @@ function ContactUs(props) {
             console.log(err.message);
         }
     }
-    const map=`https://maps.google.com/maps?q=${facility}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+    const map=`https://maps.google.com/maps?q=${location}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
     return (
         <div className='contact-us'>
             <div className='grid-contact'>
@@ -50,7 +49,7 @@ function ContactUs(props) {
                             </div>
                             <div className='opt'>
                                 <label>Location</label>
-                                <input type='text' placeholder='Kisumu' onChange={e=>setLocation(e.target.value)} required/>
+                                <input type='text' placeholder={location} required readOnly/>
                             </div>
                         </div>
                         <div className='input'>

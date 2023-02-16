@@ -1,20 +1,24 @@
 
 //getting user location 
-export let facility=''
+export let location=''
 const successCallback=(position)=>{
     const {latitude, longitude}= position.coords;
-    facility=`${latitude},${longitude}`
-    return facility
+    location=`${latitude},${longitude}`
+    return location
 }
 
 let message=''
 const errorCallback=(error)=>{
     if(error.message.includes("denied")){
         message='Please, Turn on your device location'
-        alert(message)
+        setTimeout(()=>{
+            window.confirm(message)
+        },5000)
     }else{
         message=`No internet`
-        alert(message)
+       setTimeout(()=>{
+            alert(message)
+       },10000)
     }
 }
 navigator.geolocation.getCurrentPosition(successCallback, errorCallback);

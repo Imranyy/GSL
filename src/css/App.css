@@ -5,7 +5,8 @@
   font-family: 'Ubuntu';
 }
 :root{
-  --navy-blue:#1A5C7F;
+  /* --navy-blue:#1A5C7F; */
+  --navy-blue:#183060 ;
   --navy-blue-light:#2A95D0;
   --white:#ffff;
   --white-grey:#FCFCFC;
@@ -18,7 +19,7 @@ nav{
   font-weight: 700;
   display: flex;
   position:fixed;
-  background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+  background: linear-gradient(0deg, rgba(24, 48, 96, 0.79), rgba(24, 48, 96, 0.79));
   top:0;
   left: 0;
   right: 0;
@@ -58,7 +59,7 @@ nav .show-menu{
   bottom: 0;
   display: none;
   z-index: 100;
-  background:  rgba(72, 82, 88, 0.79);
+  background:  rgba(17, 60, 85, 0.79);
 }
 .nav-menu{
   z-index: 110;
@@ -67,7 +68,7 @@ nav .show-menu{
   right: 0;
   left: 30%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
+  background: linear-gradient(0deg, rgba(24, 48, 96, 0.79), rgba(24, 48, 96, 0.79));
   padding: 20px 50px;
 }
 .nav-menu ul{
@@ -90,7 +91,7 @@ nav .show-menu{
   height: 60vh;
   color: var(--white);
   text-align: center;
-  background: url('../media/Rectangle\ 17.png') no-repeat center;
+  background: url('../media/hero-image.png') no-repeat center;
   background-size: cover;
 }
 .hero-image .hero-content{
@@ -527,8 +528,8 @@ form button{
   height: 62px;
   background: var(--navy-blue);
   border-radius: 10px;
-  margin-left: 31vw;
   margin-top: 20px;
+  margin-left: 20px;
   border: none;
   cursor: pointer;
   font-weight: 400;
