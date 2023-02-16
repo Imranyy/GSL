@@ -13,7 +13,7 @@ function ContactUs(props) {
             <>
                 <button disabled style={{background:"grey"}}><i>Sending Message..</i></button>
             </>)
-            const url='';
+            const url='https://gsl-api.onrender.com/api/send';
             await fetch(url,{
                 method:"POST",
                 body:JSON.stringify(({
@@ -49,7 +49,7 @@ function ContactUs(props) {
                             </div>
                             <div className='opt'>
                                 <label>Location</label>
-                                <input type='text' placeholder={location} required readOnly/>
+                                <input type='text' value={location} required readOnly/>
                             </div>
                         </div>
                         <div className='input'>
