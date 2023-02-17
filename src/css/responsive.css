@@ -208,16 +208,7 @@
         border-radius: 5px;
         font-size: small;
       }
-      .hero-image .move-down-img{
-        margin-top: 45px;
-        cursor: pointer;
-        width: 30px;
-      }
-      .hero-image .move-up-img{
-        margin-top: 45px;
-        cursor: pointer;
-        width: 30px;
-      }
+     
       .plans h1,.plans1 h1{
         width: 250px;
         height: 35px;
