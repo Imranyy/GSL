@@ -41,9 +41,11 @@ nav ul{
 nav ul li{
   padding-left: 30px;
   cursor: pointer;
+  text-transform: uppercase;
 }
-nav ul li:hover{
-  color: var(--navy-blue);
+nav ul li:hover,nav ul li a:hover{
+  font-size: larger;
+  color: var(--white-grey);
 }
 nav .show-menu{
   display: none;
@@ -59,17 +61,17 @@ nav .show-menu{
   bottom: 0;
   display: none;
   z-index: 100;
-  background:  rgba(17, 60, 85, 0.79);
+  background:  none;
 }
 .nav-menu{
   z-index: 110;
   position: fixed;
   top: 0;
   right: 0;
-  left: 30%;
-  bottom: 0;
-  background: linear-gradient(0deg, rgba(24, 48, 96, 0.79), rgba(24, 48, 96, 0.79));
-  padding: 20px 50px;
+  height: fit-content;
+  
+  background: var(--white-grey);
+  padding: 40px 50px;
 }
 .nav-menu ul{
   text-align: left;
@@ -77,18 +79,20 @@ nav .show-menu{
 }
 .nav-menu ul li{
   cursor: pointer;
+  color: #000;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   padding: 35px 0 0 0;
+  text-transform: uppercase;
 }
-.nav-menu ul li:hover{
-  color: var(--navy-blue);
+.nav-menu ul li:hover,.nav-menu ul li a:hover{
+  font-size: 19px;
 }
 
 .hero-image{
   padding-top: 35vh;
   padding-left: 4%;
-  height: 60vh;
+  height: 80vh;
   color: var(--white);
   text-align: center;
   background: url('../media/hero-image.png') no-repeat center;
@@ -105,9 +109,10 @@ nav .show-menu{
   margin-top: 50px;
   height: 55px;
   font-weight: 400;
-  font-size: 48px;
-  letter-spacing: 2px;
+  font-size: 2vw;
+  letter-spacing: 3px;
   line-height: 55px;
+  text-align: center;
 }
 .blue{
   color: var(--navy-blue-light);
@@ -153,6 +158,10 @@ a:hover{
 }
 .plans li, .plans1 li{
   list-style: none;
+  font-size: small;
+}
+.plans li img, .plans1 li img{
+  margin-right: 10px;
 }
 .plans{
   display: none;
@@ -489,7 +498,7 @@ a:hover{
 }
 iframe{
   width: 45vw;
-  height: 40vw;
+  height: 43vw;
 }
 form{
   display: flex;

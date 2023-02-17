@@ -1,5 +1,5 @@
 import React from 'react';
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 function Navbar(props) {
     const plans=()=>{
@@ -37,17 +37,19 @@ function Navbar(props) {
                     <li onClick={plans}>Plans</li>
                     <li onClick={services}>Services</li>
                     <li onClick={business}>Business</li>
-                    <li><a href='tel:0793486784' target="_blank" rel='noreferrer'>call +254793486784</a></li>
+                    <li><a href='tel:0799507509' target="_blank" rel='noreferrer'>call +254799507509</a></li>
                     <li className='show-menu' onClick={showMenu}><AiOutlineMenu size={30}/></li>
                 </ul>
             </nav>  
             <div className='nav-menu-bg' onClick={closeMenu}>
                 <div className='nav-menu'>
+                    <AiOutlineClose style={{color:'black', position:'absolute',top:'20px',right:'20px',cursor:'pointer'}} size={20}/>
                     <ul>
+                        <li onClick={closeMenu}>Home</li>
                         <li onClick={plans}>Plans</li>
                         <li onClick={services}>Services</li>
                         <li onClick={business}>Business</li>
-                        <li><a href='tel:0793486784' target="_blank" rel='noreferrer'>call +254793486784</a></li>
+                        <li><a href='tel:0799507509' target="_blank" rel='noreferrer'>call +254799507509</a></li>
                     </ul>
                 </div> 
             </div>

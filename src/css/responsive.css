@@ -1,5 +1,15 @@
 
 @media screen and (max-width:1250px) {
+  .hero-image h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: normal;
+  }
+  .hero-image p{
+    font-size: 3vw;
+    width: 70vw;
+    padding: 50px 0;
+  }
     .plans .grid-plans,.plans1 .grid-plans{
         display: grid;
         justify-content: center;
@@ -12,13 +22,11 @@
       }
       .grid-plans .grid-item-plan1,.grid-plans .grid-item-plan3,.grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan3{
         text-align: center;
-        padding: 25px 5px 23px 5px;
         font-size: small;
       }
       .grid-plans .grid-item-plan2,.grid-plans1 .grid-item-plan2{
         font-size: small;
         text-align: center;
-        padding: 25px 5px 23px 5px;
       }
       .grid-plans .content,.grid-plans1 .content{
         position: relative;
@@ -66,18 +74,11 @@
 @media screen and (max-width:1200px) {
     .hero-image{
         padding-top: 50px;
-        height: 50vh;
+        height: 90vh;
         margin: 0;
         align-items: center;
         display: flex;
         justify-content: center;
-      }
-    .hero-image h1{
-        font-size: 35px;
-      }
-      .hero-image p{
-        font-weight: 300;
-        font-size: 18px;
       }
       .plans, .plans1{
         height: fit-content;
@@ -87,7 +88,6 @@
         justify-content: center;
         grid-template-columns: repeat(2,1fr);
         row-gap: 25px;
-        padding: 20px 10% 50px 10%;
       }
       
       .service{
@@ -111,13 +111,6 @@
       }
     }
 @media screen and (max-width:900px) {
-  .hero-image h1{
-        font-size: 25px;
-      }
-      .hero-image p{
-        font-weight: 300;
-        font-size: 13px;
-      }
       .contact-us{
         padding: 0;
       }
@@ -175,13 +168,6 @@
     nav .show-menu{
         display: block;
       }
-    .hero-image h1{
-        font-size: 20px;
-      }
-      .hero-image p{
-        font-weight: 300;
-        font-size: 13px;
-      }
       .plans{
         display: block;
       }
@@ -192,14 +178,19 @@
         height: fit-content;
     }
       .plans .grid-plans, .plans1 .grid-plans1{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         row-gap: 25px;
-        padding: 20px 25% 50px 25%;
+        padding: 20px 25% 50px 20%;
       }
       
-      
+      .grid-plans .grid-item-plan1,.grid-plans .grid-item-plan3,.grid-plans1 .grid-item-plan1,.grid-plans1 .grid-item-plan3{
+        width: 70vw;
+      }
+      .grid-plans .grid-item-plan2,.grid-plans1 .grid-item-plan2{
+        width: 70vw;
+      }
     }
 
     @media screen and (max-width:650px) {
@@ -235,7 +226,7 @@
         line-height: 55px;
         letter-spacing: 0.02em;
       }
-      .plans-button,.plans1-butto{
+      .plans-button,.plans1-button{
         margin-top: 15px;
       }
       .plans-button .btn1,.plans1-button .btn1{
@@ -251,11 +242,11 @@
         margin-left: 41px;
       }
       .grid-plans .content,.grid-plans1 .content{
-        margin-left: -20px;
+        margin-left: -30px;
         margin-top: 10px;
         text-align: left;
         box-sizing: border-box;
-        width: 200px;
+        width: 220px;
         height: 200px;
         border: 1px solid rgba(0, 0, 0, 0.25);
         border-radius: 10px;
@@ -274,16 +265,14 @@
 
     @media screen and (max-width:500px) {
       .hero-image h1{
-        font-size: 12px;
-        font-weight: 600;
-        margin: 0;
-        padding: 0;
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: normal;
       }
       .hero-image p{
-        font-weight: 300;
-        font-size: 15px;
-        width: 250px;
-        padding-bottom: 50px;
+        font-size: 18px;
+        width: 80vw;
+        padding: 40px 0 50px 0;
       }
     
       .grid-whats .grid-item-whats1,.grid-whats .grid-item-whats2,.grid-whats .grid-item-whats3,.grid-whats .grid-item-whats4{
@@ -291,24 +280,10 @@
         min-height: 30vw;
       }
     }
-    @media screen and (max-width:350px) {
-     
-      .hero-image p{
-        font-weight: 300;
-        font-size: 15px;
-        width: 200px;
-        padding-bottom: 50px;
-      }
-      
-    }
 
-@supports(backdrop-filter: blur(3rem)){
+@supports(backdrop-filter: blur(4rem)){
     nav{
       background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
-      backdrop-filter: blur(3rem);
-    }
-    .nav-menu{
-      background: linear-gradient(0deg, rgba(13, 33, 45, 0.79), rgba(13, 33, 45, 0.79));
-      backdrop-filter: blur(3rem);
+      backdrop-filter: blur(4rem);
     }
   }

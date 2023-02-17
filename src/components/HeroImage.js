@@ -14,6 +14,9 @@ function HeroImage(props) {
         document.querySelector('.move-up-img').style.display='none';
         document.querySelector('.move-down-img').style.display='block';
     }
+    const scrollToContactUs=()=>{
+        document.querySelector('.contact-us').scrollIntoView()
+    }
     return (
         <>
             <div className='hero-image'>
@@ -24,11 +27,10 @@ function HeroImage(props) {
                     animate={{y: 0}}
                     transition={{delay:0.5}}
                 >
-                    <h1>SUPER<span className='blue'> FAST </span>SPEEDS AT <span className='blue'> AFFORDABLE </span>RATES </h1>
+                    <h1>GLOBILINK SOLUTION LTD. SUPER FAST SPEEDS at AFFORDABLE RATES </h1>
                     <p>GSL brings to Kisumu internet with incredible speeds at affordable rates</p>
                     <motion.button 
-                        onClick={showPlans} 
-                        onDoubleClick={close}
+                        onClick={scrollToContactUs} 
                         whileHover={{ background:'var(--white)', color:'var(--navy-blue-light)'}}
                         animate={{ background:'var(--navy-blue-light)', color:'var(--white)'}}
                         transition={{duration:0.3}}
