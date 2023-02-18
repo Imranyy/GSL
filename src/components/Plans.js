@@ -32,14 +32,12 @@ const customStyles={
 
 function Plans(pro1s){
     const showBusiness=()=>{
-        document.querySelector('.plans1').style.display='block';
+        document.querySelector('.plans1').style.display='flex';
         document.querySelector('.plans').style.display="none";
-        document.querySelector('.move-up-img').style.display='none';
     }
     const showHome=()=>{
        document.querySelector('.plans1').style.display='none';
-        document.querySelector('.plans').style.display="block";
-        document.querySelector('.move-up-img').style.display='block';
+        document.querySelector('.plans').style.display="flex";
     }
     //modal1
     const [modalIsOpen1,setIsOpen1]=useState(false);
@@ -194,7 +192,7 @@ function Plans(pro1s){
                         <button className='btn2' onClick={openModal2}>KSH 3000/mo</button>
                     </div>
 
-                    <div className='grid-item-plan3'>
+                    <div className='grid-item-plan1'>
                         <h2>GOLD</h2>
                         <p>Awesome for remote work</p>
                         <h1>20mbps</h1>
@@ -212,7 +210,7 @@ function Plans(pro1s){
             </motion.div>
 
             {/* Business */}
-            <div className='plans1' style={{display:'none'}}>
+            <div className='plans1' >
                 <h1>Internet Plans</h1>
                 <div className='plans1-button'>
                     <button className='btn2' onClick={showHome}>Home</button>
@@ -249,7 +247,7 @@ function Plans(pro1s){
                         <button className='btn2' onClick={openModal5}>KSH 5499/mo</button>
                     </div>
 
-                    <div className='grid-item-plan3'>
+                    <div className='grid-item-plan1'>
                         <h2>GOLD</h2>
                         <p>Awesome for remote work</p>
                         <h1>20mbps</h1>

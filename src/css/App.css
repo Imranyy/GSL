@@ -14,6 +14,9 @@
 html{
   scroll-behavior:smooth;
 }
+ul{
+  list-style: none;
+}
 nav{
   color: white;
   font-weight: 700;
@@ -140,12 +143,6 @@ nav .show-menu{
   cursor: pointer;
   width: 30px;
 }
-.hero-image .move-up-img{
-  margin-top: 60px;
-  cursor: pointer;
-  width: 30px;
-  transform: rotate(180deg);
-}
 a{
   text-decoration: none;
   color: inherit;
@@ -153,7 +150,155 @@ a{
 a:hover{
   color: var(--navy-blue);
 }
-.plans ul,.plans1 ul{
+/* domestic plans */
+.plans{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.plans .plans-button{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.plans .plans-button button{
+  margin: 0 5vw;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: large;
+}
+.plans .plans-button .btn1{
+  background: var(--navy-blue);
+}
+.plans .plans-button .btn2{
+  border: solid 1px var(--navy-blue-light);
+  color: var(--navy-blue-light);
+  background: none;
+}
+.plans .grid-plans{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 20px;
+}
+.plans .grid-plans div{
+  background: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 50px 20px;
+  margin: 0 10px;
+}
+.plans .grid-plans .grid-item-plan1{
+  background: var(--white);
+  border: solid 1px var(--navy-blue-light);
+}
+.plans .grid-plans .content{
+  border-radius: 10px;
+  border: solid 1px grey;
+  margin: 20px 0;
+  background: none;
+}
+.plans .grid-plans .grid-item-plan1 button{
+  border: solid 1px var(--navy-blue-light);
+  background: var(--navy-blue);
+  color: var(--white);
+  border: none;
+}
+.plans .grid-plans div button{
+  background: var(--white);
+  color: var(--navy-blue-light);
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+}
+.plans .grid-plans .grid-item-plan2{
+  color: var(--white);
+}
+
+/* business plans */
+.plans1{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background: var(--navy-blue);
+  color: var(--white);
+}
+.plans1 .plans1-button{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.plans1 .plans1-button button{
+  margin: 0 5vw;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: large;
+}
+.plans1 .plans1-button .btn1{
+  border: solid 1px var(--white-grey);
+  background: none;
+  color: var(--white);
+}
+.plans1 .plans1-button .btn2{
+  border: solid 1px var(--navy-blue-light);
+  color: var(--navy-blue-light);
+  background: var(--white);
+}
+.plans1 .grid-plans1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 20px;
+}
+.plans1 .grid-plans1 div{
+  background: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 50px 20px;
+  margin: 0 10px;
+}
+.plans1 .grid-plans1 .grid-item-plan1{
+  background: var(--white);
+  border: solid 1px var(--navy-blue-light);
+  color: #000;
+}
+.plans1 .grid-plans1 .content{
+  border-radius: 10px;
+  border: solid 1px grey;
+  margin: 20px 0;
+  background: none;
+}
+.plans1 .grid-plans1 .grid-item-plan1 button{
+  background: var(--navy-blue);
+  color:var(--white-grey);
+}
+.plans1 .grid-plans1 div button{
+  background: var(--white);
+  color: var(--navy-blue-light);
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+}
+.plans1 .grid-plans1 .grid-item-plan2{
+  color: var(--white);
+  border-radius: 50px 20px;
+  border: solid 1px var(--white);
+}
+/* .plans ul,.plans1 ul{
   margin-top: 20px;
 }
 .plans li, .plans1 li{
@@ -275,7 +420,7 @@ a:hover{
   width: 280px;
   border: 1px solid var(--navy-blue);
   height: 50px;
-}
+} */
 .contact-list{
   margin-top: 50px;
 }
@@ -284,7 +429,7 @@ a:hover{
   list-style:none;
 }
 
-.plans1{
+/* .plans1{
   padding-top:30px;
   height: 742px;
   background: #0D212D;
@@ -394,7 +539,7 @@ a:hover{
   width: 280px;
   border: 1px solid var(--navy-blue);
   height: 50px;
-}
+} */
 .divider{
   padding: 20px 0;
   margin: 10px 0;

@@ -4,16 +4,6 @@ import vector from "../media/Vector.png";
 import {motion} from "framer-motion";
 
 function HeroImage(props) {
-    const showPlans=()=>{
-        document.querySelector('.plans').style.display='block';
-        document.querySelector('.move-down-img').style.display='none';
-        document.querySelector('.move-up-img').style.display='block';
-    }
-    const close=()=>{
-        document.querySelector('.plans').style.display='none';
-        document.querySelector('.move-up-img').style.display='none';
-        document.querySelector('.move-down-img').style.display='block';
-    }
     const scrollToContactUs=()=>{
         document.querySelector('.contact-us').scrollIntoView()
     }
@@ -37,8 +27,7 @@ function HeroImage(props) {
                     >
                         ORDER NOW
                     </motion.button><br/>
-                    <img src={vector} className='move-down-img' alt="..." onClick={showPlans}/>
-                    <img src={vector} style={{display:'none'}} alt="..." className='move-up-img' onClick={close}/>
+                    <img src={vector} className='move-down-img' alt="..." onClick={scrollToContactUs}/>
                 </motion.div>
             </div>
         </>
