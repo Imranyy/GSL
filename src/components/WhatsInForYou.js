@@ -27,7 +27,7 @@ function WhatsInForYou(props) {
                     <motion.p className='text' initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>
                     Unlimited Internet and VoIP calls
                     </motion.p>
-                    <div className='sec-text' style={{display:'none', margin:'130px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text' style={{display:'none', margin:'100px 20px',textAlign:'left',color:'white'}}>
                         <h3>Unlimited Internet and VoIP calls</h3><br/>
                         We have the equipment and the telecommunication line access required to have a point of presence on the internet for the geographic area served.
                     </div>
@@ -36,7 +36,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text1' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                         Customer Data Protection
                     </motion.p>
-                    <div className='sec-text1' style={{display:'none', margin:'130px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text1' style={{display:'none', margin:'100px 20px',textAlign:'left',color:'white'}}>
                         <h2>Customer Data Protection</h2><br/>
                        We have the equipment and the telecommunication line access required to have a point of presence on the internet for the geographic area served.
                     </div>
@@ -45,7 +45,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text2' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                         HD Surveillance Streaming
                     </motion.p>
-                    <div className='sec-text2' style={{display:'none', margin:'130px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text2' style={{display:'none', margin:'100px 20px',textAlign:'left',color:'white'}}>
                         <h2>HD Surveillance Streaming</h2><br/>
                         We have the equipment and the telecommunication line access required to have a point of presence on the internet for the geographic area served.
                     </div>
@@ -54,7 +54,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text3' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                         HD Video Streaming
                     </motion.p>
-                    <div className='sec-text3' style={{display:'none', margin:'130px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text3' style={{display:'none', margin:'100px 20px',textAlign:'left',color:'white'}}>
                         <h2>HD Video Streaming</h2><br/>
                         We have the equipment and the telecommunication line access required to have a point of presence on the internet for the geographic area served.
                     </div>
