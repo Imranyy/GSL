@@ -36,21 +36,11 @@
   }
   .whats-in .grid-whats{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
   }
-  .grid-whats .grid-item-whats1,.grid-whats .grid-item-whats2,.grid-whats .grid-item-whats3,.grid-whats .grid-item-whats4{
-    width:50vw;
-    min-height: 30vw;
-  }
-  .grid-whats p{
-    padding: 0;
-    margin: 200px 10px;
-    text-align: center;
-    height: 28px;
-    font-weight: 600;
-    font-size: larger;
-    line-height: 28px;
-  }
+ 
+ 
 }
 @media screen and (max-width:1200px) {
     .hero-image{
@@ -131,6 +121,7 @@
         width: 100%;
         height: 100vw;
       }
+      
     }
 @media screen and (max-width:800px) {
     nav ul li{
@@ -155,6 +146,10 @@
       }
       .modal small{
         font-size: 10px;
+      }
+      .whats-in .grid-whats{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
       }
     }
 

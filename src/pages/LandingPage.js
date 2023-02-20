@@ -12,16 +12,6 @@ function LandingPage(props) {
         <>
             <HeroImage/>
             <Plans/>
-                <motion.div
-                    className='divider'
-                    initial={{x:'-80vw'}}
-                    whileInView={{x:0}}
-                    transition={{duration:0.8}}
-                    viewport={{ once: true }}
-                >
-                    <h1>What’s In It for You?</h1>
-                </motion.div>
-            <WhatsInForYou/>
                 <motion.div 
                     className='divider'
                     initial={{x:'-80vw'}}
@@ -29,9 +19,20 @@ function LandingPage(props) {
                     transition={{duration:0.8}}
                     viewport={{ once: true }}
                 >
-                    <h1>Together, our services perform even better.</h1>
+                    <h1>Together, our solutions deliver outstanding results.</h1>
                 </motion.div>
             <Service/>
+            <motion.div
+                    className='divider'
+                    initial={{x:'-80vw'}}
+                    whileInView={{x:0}}
+                    transition={{duration:0.8}}
+                    viewport={{ once: true }}
+                >
+                    <h1>Solutions</h1>
+                    <p style={{textAlign:'center', margin:"10px 30px"}}>We provide a variety of solutions tailored to clients' needs, with a team of technology and cyber security experts to ensure security. Clients can choose from a range of options and our team is available to assist with implementation.</p>
+                </motion.div>
+                <WhatsInForYou/>
             <ContactUs/>
             <Footer/>
         </>
