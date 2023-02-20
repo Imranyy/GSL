@@ -148,8 +148,9 @@
         font-size: 10px;
       }
       .whats-in .grid-whats{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
       }
     }
 
@@ -193,10 +194,6 @@
         padding: 40px 0 50px 0;
       }
     
-      .grid-whats .grid-item-whats1,.grid-whats .grid-item-whats2,.grid-whats .grid-item-whats3,.grid-whats .grid-item-whats4{
-        width:90vw;
-        min-height: 30vw;
-      }
     }
 
 @supports(backdrop-filter: blur(4rem)){
