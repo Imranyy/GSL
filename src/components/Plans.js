@@ -13,18 +13,17 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const customStyles={
     content:{
-      background:'#183060',
+        background:'#FFF',
+        borderRadius:"20px",
         position:'fixed',
         top:'20vh',
         left:'10vw',
         right:'10vw',
-        bottom:'15vh',
-        color:'white',
+        bottom:'10vh',
+        color:'#000',
         zIndex:'200',
         display:'flex',
         flexDirection:'column',
-        alignItems:'center',
-        justifuContent:'center',
         lineHeight:'25px',
       transform:'translate(-50%.-50%)'
     },
@@ -87,6 +86,18 @@ function Plans(pro1s){
     const closeModal6=()=>{
         setIsOpen6(false)
     }
+    //scroll to contact form
+    const scrollToContact=()=>{
+        setIsOpen1(null)
+        setIsOpen2(null)
+        setIsOpen3(null)
+        setIsOpen4(null)
+        setIsOpen5(null)
+        setIsOpen6(null)
+        setTimeout(()=>{
+            document.querySelector('.contact-us').scrollIntoView();
+        },300)
+    }
     return (
         <>
         {/*plans modals*/} 
@@ -95,9 +106,36 @@ function Plans(pro1s){
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal1} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>BRONZE</h2><br/>
-            <p>Perfect to get started</p>
-            <h3>6mbps</h3>
+           <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Bronze Plan</p>
+                    <p>6mbps</p>
+                </div>
+                <small>Get affordable internet with fast download speeds perfect for streaming your favorite shows and browsing the web with ease.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>6mbps GSL Bronze Plan</p>
+                        <p>ksh 2500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 6000</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
 
         <Modal
@@ -105,9 +143,36 @@ function Plans(pro1s){
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal2} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>SILVER</h2><br/>
-            <p>Perfect for domestic use</p>
-            <h3>12mbps</h3>
+            <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Silver Plan</p>
+                    <p>12mbps</p>
+                </div>
+                <small>Upgrade to faster speeds and get unlimited data usage, perfect for families and heavy internet users who need reliable connectivity for work, entertainment and more.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>12mbps GSL Bronze Plan</p>
+                        <p>ksh 3000</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 6500</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
 
         <Modal
@@ -115,9 +180,36 @@ function Plans(pro1s){
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal3} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>GOLD</h2><br/>
-            <p>Awesome for remote work</p>
-            <h3>20mbps</h3>
+            <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Gold Plan</p>
+                    <p>20mbps</p>
+                </div>
+                <small>Take your internet to the next level with lightning-fast speeds and exclusive perks like priority customer service, advanced security features, and more for the ultimate online experience.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>6mbps GSL Bronze Plan</p>
+                        <p>ksh 10999</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 14499</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
 
         {/** Business modals */}
@@ -126,27 +218,108 @@ function Plans(pro1s){
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal4} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>BRONZE</h2><br/>
-            <p>Perfect to get started</p>
-            <h3>6mbps</h3>
+            <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Bronze Plan</p>
+                    <p>6mbps</p>
+                </div>
+                <small>Get affordable internet with fast download speeds perfect for streaming your favorite shows and browsing the web with ease.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>6mbps GSL Bronze Plan</p>
+                        <p>ksh 2500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 6000</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
         <Modal
              isOpen={modalIsOpen5}
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal5} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>SILVER</h2><br/>
-            <p>Perfect for domestic use</p>
-            <h3>15mbps</h3>
+            <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Silver Plan</p>
+                    <p>12mbps</p>
+                </div>
+                <small>Upgrade to faster speeds and get unlimited data usage, perfect for families and heavy internet users who need reliable connectivity for work, entertainment and more.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>12mbps GSL Bronze Plan</p>
+                        <p>ksh 3000</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 6000</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
         <Modal
              isOpen={modalIsOpen6}
              style={customStyles}
         >
             <AiOutlineClose onClick={closeModal6} size={25} style={{position:'absolute',cursor:'pointer',top:'20px',right:'20px'}}/>
-            <h2>GOLD</h2><br/>
-            <p>Awesome for remote work</p>
-            <h3>20mbps</h3>
+            <div className='modal'>
+                <h2>Review and Checkout</h2><br/>
+                <div className='head'>
+                    <p>Gold Plan</p>
+                    <p>20mbps</p>
+                </div>
+                <small>Take your internet to the next level with lightning-fast speeds and exclusive perks like priority customer service, advanced security features, and more for the ultimate online experience.</small>
+                <div className='product'>
+                    <div className='table-header'>
+                        <p>Product</p>
+                        <p>Price</p>
+                    </div>
+                    <div className='items'>
+                        <p>6mbps GSL Bronze Plan</p>
+                        <p>ksh 10999</p>
+                    </div>
+                    <div className='items'>
+                        <p>Router</p>
+                        <p>ksh 3500</p>
+                    </div>
+                    <div className='items'>
+                        <p>Total</p>
+                        <p>ksh 14499</p>
+                    </div>
+                    <div className='items'>
+                        <p></p>
+                        <button onClick={scrollToContact}>ORDER NOW</button>
+                    </div>
+                </div>
+           </div>
         </Modal>
 
         {/* Home */}

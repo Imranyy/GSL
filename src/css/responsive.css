@@ -139,13 +139,23 @@
     nav .show-menu{
         display: block;
       }
-      /* .plans{
-        display: block;
-      } */
       .move-down-img,.move-up-img{
         display: none;
       }
-      
+
+      /* plans modal */
+      .modal{
+        margin: 20px 0;
+      }
+      .modal h2{
+        font-size: 6vw;
+      }
+      .modal .head{
+        font-size:5vw;
+      }
+      .modal small{
+        font-size: 10px;
+      }
     }
 
     @media screen and (max-width:650px) {

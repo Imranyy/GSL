@@ -163,7 +163,7 @@ a:hover{
   justify-content: center;
 }
 .plans .plans-button button{
-  margin: 0 5vw;
+  margin: 0 2vw;
   padding: 10px 30px;
   cursor: pointer;
   border: none;
@@ -190,7 +190,7 @@ a:hover{
   flex-direction: column;
   align-items: center;
   padding: 50px 30px;
-  border-radius: 50px 20px;
+  border-radius: 20px;
   margin: 0 10px;
 }
 .plans .grid-plans .grid-item-plan1{
@@ -237,7 +237,7 @@ a:hover{
   justify-content: center;
 }
 .plans1 .plans1-button button{
-  margin: 0 5vw;
+  margin: 0 2vw;
   padding: 10px 30px;
   cursor: pointer;
   border: none;
@@ -266,7 +266,7 @@ a:hover{
   flex-direction: column;
   align-items: center;
   padding: 50px 30px;
-  border-radius: 50px 20px;
+  border-radius: 20px;
   margin: 0 10px;
 }
 .plans1 .grid-plans1 .grid-item-plan1{
@@ -295,7 +295,7 @@ a:hover{
 }
 .plans1 .grid-plans1 .grid-item-plan2{
   color: var(--white);
-  border-radius: 50px 20px;
+  border-radius: 20px;
   border: solid 1px var(--white);
 }
 /* .plans ul,.plans1 ul{
@@ -700,4 +700,58 @@ footer{
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+}
+
+/* plans modals */
+.modal{
+  padding: 5px 10px;
+}
+.modal h2{
+  letter-spacing: 0.02em;
+  font-size: 35px;
+  color: #192C67;
+}
+.modal .head{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 6px 0;
+  font-size:25px;
+}
+.modal small{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.modal .product{
+  margin: 10px 0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: fit-content;
+}
+.modal .table-header{
+  border-radius: 12px 12px 0 0;
+  background: rgba(42, 149, 208, 0.17);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.modal .items{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.modal button{
+  color: var(--white);
+  background: var(--navy-blue);
+  border-radius: 11px;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0;
+  /* float: right; */
+  cursor: pointer;
 }
