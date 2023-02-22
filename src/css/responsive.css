@@ -135,6 +135,7 @@
       /* plans modal */
       .modal{
         margin: 20px 0;
+        padding: 0;
       }
       .modal h2{
         font-size: 6vw;
@@ -145,10 +146,24 @@
       .modal small{
         font-size: 10px;
       }
+      .modal .items {
+        font-weight: 500;
+        font-size: small;
+      }
+      .grid-plans img,.grid-plans1 img {
+        width: 5vw;
+        height: 5vw;
+      }
       .whats-in .grid-whats{
         display: flex;
         flex-direction:column;
         align-items: center;
+      }
+      form .contact-us-form-header {
+        padding: 0 50px;
+      }
+      footer{
+        font-size: 15px;
       }
     }
 

@@ -42,8 +42,10 @@ function ContactUs(props) {
                 </div>
                 <div className='grid-contact-item1'>
                     <form onSubmit={sendMessage}>
-                        <h1>Contact Us</h1><br/>
-                        <p>Interested in any of our services? Tell us!</p><br/>
+                        <div className='contact-us-form-header'>
+                            <h1>Contact Us</h1><br/>
+                            <p>Interested in any of our services? Tell us!</p><br/>
+                        </div>
                         <div className='input'>
                             <div className='opt'>
                                 <label>Name</label>

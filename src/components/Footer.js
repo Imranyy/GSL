@@ -4,7 +4,7 @@ function Footer(props) {
     return (
         <>
             <footer>
-               <sub>GLOBILINK SOLUTIONS LTD. 2022</sub>
+               <small>GLOBILINK SOLUTIONS LTD. 2022</small>
             </footer>   
         </>
     );

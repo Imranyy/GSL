@@ -19,7 +19,7 @@ function LandingPage(props) {
                     transition={{duration:0.8}}
                     viewport={{ once: true }}
                 >
-                    <h1>Together, our solutions deliver outstanding results.</h1>
+                    <h1>Services</h1>
                 </motion.div>
             <Service/>
             <motion.div

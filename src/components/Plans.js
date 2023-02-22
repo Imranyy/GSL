@@ -17,8 +17,8 @@ const customStyles={
         borderRadius:"20px",
         position:'fixed',
         top:'20vh',
-        left:'10vw',
-        right:'10vw',
+        left:'5vw',
+        right:'5vw',
         bottom:'10vh',
         color:'#000',
         zIndex:'200',
@@ -347,7 +347,7 @@ function Plans(pro1s){
                                 <li><img src={vect4} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn1' onClick={openModal1}>KSH 2500/mo</button>
+                        <button className='btn1' onClick={openModal1}>ORDER NOW</button>
                     </div>
 
                     <div className='grid-item-plan2'>
@@ -362,7 +362,7 @@ function Plans(pro1s){
                                 <li><img src={vect8} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn2' onClick={openModal2}>KSH 3000/mo</button>
+                        <button className='btn2' onClick={openModal2}>ORDER NOW</button>
                     </div>
 
                     <div className='grid-item-plan1'>
@@ -377,7 +377,7 @@ function Plans(pro1s){
                                 <li><img src={vect4} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn1' onClick={openModal3}>KSH 10999/mo</button>
+                        <button className='btn1' onClick={openModal3}>ORDER NOW</button>
                     </div>
                 </div>
             </motion.div>
@@ -402,7 +402,7 @@ function Plans(pro1s){
                                 <li><img src={vect4} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn1' onClick={openModal4}>KSH 3000/mo</button>
+                        <button className='btn1' onClick={openModal4}>ORDER NOW</button>
                     </div>
 
                     <div className='grid-item-plan2'>
@@ -417,7 +417,7 @@ function Plans(pro1s){
                                 <li><img src={vect8} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn2' onClick={openModal5}>KSH 5499/mo</button>
+                        <button className='btn2' onClick={openModal5}>ORDER NOW</button>
                     </div>
 
                     <div className='grid-item-plan1'>
@@ -432,7 +432,7 @@ function Plans(pro1s){
                                 <li><img src={vect4} alt='...'/>  HD surveillance streaming</li>
                             </ul>
                         </div>
-                        <button className='btn1' onClick={openModal6}>KSH 15499/mo</button>
+                        <button className='btn1' onClick={openModal6}>ORDER NOW</button>
                     </div>
                 </div>
             </div>

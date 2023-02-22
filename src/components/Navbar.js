@@ -4,7 +4,7 @@ import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 function Navbar(props) {
     const plans=()=>{
         document.querySelector('.plans1').style.display='none';
-        document.querySelector('.plans').style.display="block";
+        document.querySelector('.plans').style.display="flex";
         document.querySelector('.plans').scrollIntoView();
         document.querySelector('.move-up-img').style.display='block';
         document.querySelector('.move-down-img').style.display='none';
@@ -14,12 +14,8 @@ function Navbar(props) {
         document.querySelector('.service').scrollIntoView();
         closeMenu()
     }
-    const business=()=>{
-        document.querySelector('.plans1').style.display='block';
-        document.querySelector('.plans').style.display="none";
-        document.querySelector('.plans1').scrollIntoView();
-        document.querySelector('.move-down-img').style.display='none';
-        document.querySelector('.move-up-img').style.display='none';
+    const solutions=()=>{
+        document.querySelector('#solutions').scrollIntoView();
         closeMenu()
     }
     
@@ -36,7 +32,7 @@ function Navbar(props) {
                 <ul>
                     <li onClick={plans}>Plans</li>
                     <li onClick={services}>Services</li>
-                    <li onClick={business}>Business</li>
+                    <li onClick={solutions}>Solutions</li>
                     <li><a href='tel:0799507509' target="_blank" rel='noreferrer'>call +254799507509</a></li>
                     <li className='show-menu' onClick={showMenu}><AiOutlineMenu size={30}/></li>
                 </ul>
@@ -48,7 +44,7 @@ function Navbar(props) {
                         <li onClick={closeMenu}>Home</li>
                         <li onClick={plans}>Plans</li>
                         <li onClick={services}>Services</li>
-                        <li onClick={business}>Business</li>
+                        <li onClick={solutions}>Solutions</li>
                         <li><a href='tel:0799507509' target="_blank" rel='noreferrer'>call +254799507509</a></li>
                     </ul>
                 </div> 
