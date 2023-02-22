@@ -37,7 +37,6 @@
   .whats-in .grid-whats{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
   }
  
  
@@ -54,7 +53,6 @@
       .service{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 20px;
         padding: 20px;
       }
       .service a{
