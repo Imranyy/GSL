@@ -4,6 +4,9 @@ function WhatsInForYou(props) {
     const show1=()=>{
         document.querySelector('.sec-text').style.display='block';
         document.querySelector('.text').style.display='none';
+        document.querySelector('.sec-text').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text').style.width="300px";
+        document.querySelector('.sec-text').style.height="216px";
         showDont2()
         showDont3()
         showDont4()
@@ -18,6 +21,9 @@ function WhatsInForYou(props) {
     const show2=()=>{
         document.querySelector('.sec-text1').style.display='block';
         document.querySelector('.text1').style.display='none';
+        document.querySelector('.sec-text1').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text1').style.width="300px";
+        document.querySelector('.sec-text1').style.height="216px";
         showDont1()
         showDont3()
         showDont4()
@@ -32,6 +38,9 @@ function WhatsInForYou(props) {
     const show3=()=>{
         document.querySelector('.sec-text2').style.display='block';
         document.querySelector('.text2').style.display='none';
+        document.querySelector('.sec-text2').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text2').style.width="300px";
+        document.querySelector('.sec-text2').style.height="216px";
         showDont1()
         showDont2()
         showDont4()
@@ -46,6 +55,9 @@ function WhatsInForYou(props) {
     const show4=()=>{
         document.querySelector('.sec-text3').style.display='block';
         document.querySelector('.text3').style.display='none';
+        document.querySelector('.sec-text3').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text3').style.width="300px";
+        document.querySelector('.sec-text3').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -60,6 +72,9 @@ function WhatsInForYou(props) {
     const show5=()=>{
         document.querySelector('.sec-text4').style.display='block';
         document.querySelector('.text4').style.display='none';
+        document.querySelector('.sec-text4').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text4').style.width="300px";
+        document.querySelector('.sec-text4').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -74,6 +89,9 @@ function WhatsInForYou(props) {
     const show6=()=>{
         document.querySelector('.sec-text5').style.display='block';
         document.querySelector('.text5').style.display='none';
+        document.querySelector('.sec-text5').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text5').style.width="300px";
+        document.querySelector('.sec-text5').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -88,6 +106,9 @@ function WhatsInForYou(props) {
     const show7=()=>{
         document.querySelector('.sec-text6').style.display='block';
         document.querySelector('.text6').style.display='none';
+        document.querySelector('.sec-text6').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text6').style.width="300px";
+        document.querySelector('.sec-text6').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -102,6 +123,9 @@ function WhatsInForYou(props) {
     const show8=()=>{
         document.querySelector('.sec-text7').style.display='block';
         document.querySelector('.text7').style.display='none';
+        document.querySelector('.sec-text7').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text7').style.width="300px";
+        document.querySelector('.sec-text7').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -116,6 +140,9 @@ function WhatsInForYou(props) {
     const show9=()=>{
         document.querySelector('.sec-text8').style.display='block';
         document.querySelector('.text8').style.display='none';
+        document.querySelector('.sec-text8').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text8').style.width="300px";
+        document.querySelector('.sec-text8').style.height="230px";
         showDont1()
         showDont2()
         showDont3()
@@ -130,6 +157,9 @@ function WhatsInForYou(props) {
     const show10=()=>{
         document.querySelector('.sec-text9').style.display='block';
         document.querySelector('.text9').style.display='none';
+        document.querySelector('.sec-text9').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text9').style.width="300px";
+        document.querySelector('.sec-text9').style.height="210px";
         showDont1()
         showDont2()
         showDont3()
@@ -144,6 +174,9 @@ function WhatsInForYou(props) {
     const show11=()=>{
         document.querySelector('.sec-text10').style.display='block';
         document.querySelector('.text10').style.display='none';
+        document.querySelector('.sec-text10').style.background="linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78))";
+        document.querySelector('.sec-text10').style.width="300px";
+        document.querySelector('.sec-text10').style.height="210px";
         showDont1()
         showDont2()
         showDont3()
@@ -210,7 +243,7 @@ function WhatsInForYou(props) {
                     <motion.p className='text' initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.5}} viewport={{once:true}}>
                         K12 Schools
                     </motion.p>
-                    <div className='sec-text' style={{display:'none', margin:'20px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text' style={{display:'none', padding:'20px 20px',textAlign:'left',color:'white'}}>
                         <h3>K12 Schools</h3><br/>
                         A security system for schools that improves safety and efficiency with hardware and software components, including advanced AI technology to prevent safety hazards in advance. Key features are explained.
                     </div>
@@ -220,7 +253,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text1' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Smart Shops
                     </motion.p>
-                    <div className='sec-text1' style={{display:'none', margin:'20px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text1' style={{display:'none', padding:'20px 20px',textAlign:'left',color:'white'}}>
                         <h2>Smart Shops</h2><br/>
                         Smart shops offer personalized shopping experiences using data analytics and improve operational efficiency by reducing manual labor. This can result in cost savings for the retailer, leading to better prices or higher quality products for customers.
                     </div>
@@ -229,7 +262,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text2' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Smart Restaurant and Bar
                     </motion.p>
-                    <div className='sec-text2' style={{display:'none', margin:'20px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text2' style={{display:'none', padding:'20px 20px',textAlign:'left',color:'white'}}>
                         <h2>Smart Restaurant and Bar</h2><br/>
                         Smart restaurants and bars utilize advanced technology to improve both customer experience and operational efficiency. This can be achieved by using digital menus and tableside ordering and payment methods to reduce wait times and increase accuracy.
                     </div>
@@ -238,7 +271,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text3' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Gas Station
                     </motion.p>
-                    <div className='sec-text3' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text3' style={{display:'none',padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Gas Station</h2><br/>
                         It is essential to prioritize safety by installing a reliable alarm system that can detect fire and smoke. Even in the event of a fire, installed cameras can retrieve video footage that may not have been completely destroyed. We offer advanced technology, such as an intelligent monitoring system, that can monitor public safety and identify potential threats.
                     </div>
@@ -247,7 +280,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text4' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Manufactory
                     </motion.p>
-                    <div className='sec-text4' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text4' style={{display:'none', padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Manufactory</h2><br/>
                         Our Manufactory Security Solution provides a comprehensive approach to enhancing safety and efficiency in manufacturing. It includes video surveillance, alarm systems, perimeter protection, access control, fire detection, and a management system to prevent accidents and ensure a secure environment.
                     </div>
@@ -256,7 +289,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text5' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Parking Lot
                     </motion.p>
-                    <div className='sec-text5' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text5' style={{display:'none', padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Parking Lot</h2><br/>
                         Smart parking lots optimize parking space usage and enhance the parking experience using advanced technology. They use license plate recognition technology for security and parking guidance system technology to guide drivers to available parking spaces. Our Smart parking solution offers a convenient and efficient parking experience for drivers.
                     </div>
@@ -265,7 +298,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text6' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Smart Villa
                     </motion.p>
-                    <div className='sec-text6' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text6' style={{display:'none', padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Smart Villa</h2><br/>
                         A smart villa utilizes advanced technology to provide its residents with a comfortable, convenient, and secure living environment. With the increasing demand for high-quality living standards, our Villa solution offers intelligent alarm and video intercom functions to enhance safety and convenience for its occupants.
                     </div>
@@ -274,7 +307,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text7' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Smart Apartment
                     </motion.p>
-                    <div className='sec-text7' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text7' style={{display:'none', padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Smart Apartment</h2><br/>
                         Our Smart Apartment Solution uses advanced technology such as smart locks, video surveillance, intrusion detection, emergency alerts, intercom systems, and data analysis to enhance security measures and provide residents with a more secure and convenient living experience.
                     </div>
@@ -283,7 +316,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text8' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Banking and Finance
                     </motion.p>
-                    <div className='sec-text8' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text8' style={{display:'none', padding:'10px 20px',textAlign:'left',color:'white'}}>
                         <h2>Banking and Finance</h2>
                         The smart banking and finance approach uses advanced technology to improve the customer experience and make financial management more efficient and secure. Our solution provides sophisticated security measures including 4K UHD cameras, transaction overlay, people counting, and remote authorization, to integrate security with business processes, improve management efficiency and ensure data safety.
                     </div>
@@ -292,7 +325,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text9' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Hospital and Healthcare
                     </motion.p>
-                    <div className='sec-text9' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text9' style={{display:'none',padding:'20px 20px',textAlign:'left',color:'white'}}>
                         <h2>Hospital and Healthcare</h2><br/>
                         Our hospital and healthcare solution employs digital technology, IoT devices, and analytics to improve the management of healthcare facilities, enhance patient care quality and improve security. It includes patient management systems, video surveillance, access control, IoT devices, analytics, and smart parking solutions.
                     </div>
@@ -301,7 +334,7 @@ function WhatsInForYou(props) {
                     <motion.p  className='text10' initial={{scale:1}} whileHover={{scale:0}} transition={{duration:0.5}} viewport={{once:true}}>
                     Perimeter protection
                     </motion.p>
-                    <div className='sec-text10' style={{display:'none', margin:'10px 20px',textAlign:'left',color:'white'}}>
+                    <div className='sec-text10' style={{display:'none', padding:'20px 20px',textAlign:'left',color:'white'}}>
                         <h2>Perimeter protection</h2><br/>
                         Perimeter protection systems use physical barriers, surveillance technologies, and access control measures to detect and prevent unauthorized access, and may include alarms and notifications to alert security personnel. These technologies are combined to ensure a secure perimeter and prevent security breaches.
                     </div>
